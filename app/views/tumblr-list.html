@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no,minimal-ui"/>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="field profession">
+        <h2>专长标签</h2>
+
+        <div class="content" >
+            <i class="icon-tag"></i>
+
+            <!--<span>淘宝</span>-->
+            <!--<span>直通车</span>-->
+            <!--<span>营销</span>-->
+            <!--<span>吹牛逼</span>-->
+            <!--<span>忽悠人</span>-->
+            <span ms-each="list.tags" class="taglist">
+                        <span>
+                            {{el}}</span>
+            </span>
+
+            <!--<span>忽悠人22</span>-->
+
+        </div>
+    </div>
+
+    <div class="field detail end">
+        <h2>个人简介</h2>
+        <div class="content">
+            <p class="summary text">
+                {{list.summary}}
+            </p>
+            <div class="addition">
+
+                <div class="row" ms-repeat-el="list.listmp4" >
+                    <video
+                    ms-src="{{el.tbr_img}}"
+                    controls="controls"
+                    style="width: 100%"
+                    >
+                    </video>
+                    <p style="word-wrap: break-word;word-break: normal;">{{el.tbr_txt}}</p>
+                </div>
+
+
+                <div class="row" ms-repeat-el="list.listdata">
+
+
+                    <img ms-src="el.tbr_img" alt="">
+                    <p style="word-wrap: break-word;word-break: normal;">{{el.tbr_txt}}</p>
+                </div>
+
+                <!--<div class="row">-->
+                    <!--<img src="./images/demo/2.jpg" alt="">-->
+                    <!--<p>哈哈哈哈，这个更屌</p>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<img src="./images/demo/3.jpg" alt="">-->
+                    <!--<p>要的就是这个效果</p>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<!--<link rel="stylesheet" href="dist/assets/reset.css">-->
+<!--<link rel="stylesheet" href="dist/assets/style.css">-->
+</html>

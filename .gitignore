@@ -1,0 +1,9 @@
+# Created by .gitignore support plugin (hsz.mobi)
+.idea/
+node_modules/
+
+#app/**/*.css
+#spApp/**/*.css
+dist
+#share/partial/mine-partial/mineCtrl.js
+#bower_components/

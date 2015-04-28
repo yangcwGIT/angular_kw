@@ -1,0 +1,110 @@
+/**
+ * Created by han on 15-3-21.
+ */
+
+body {
+    margin: 0 0 8px 0;
+}
+
+#partial {
+    .container {
+        //    background-color: #faa801;
+        padding-right: 0;
+        padding-left: 0;
+        header {
+            img {
+                width: 100%;
+                display: block;
+            }
+            img:not(:first-child) {
+                margin-top: -4px;
+            }
+        }
+        .prolist {
+            padding-left: 16px;
+            padding-right: 16px;
+            .data-list {
+                border-radius: 5px;
+                border: #dfdfdf 1px solid;
+                width: 100%;
+                text-align: left;
+                padding: 0;
+                ol {
+                    padding: 0;
+                    img {
+                        position: absolute;
+                        left: 15px;
+                        top: 43px;
+                        width: 80px;
+                        margin-top: -35px;
+                        border-radius: 5px;
+                    }
+                    li:last-child {
+                        padding: 10px;
+                        border: none;
+                        height: 32px;
+                    }
+                    li {
+                        color: #333;
+                        border-bottom: 1px solid #e7e7e7;
+                        //        background-color: #fafafa;
+                        font-size: 17px;
+                        padding: 10px 10px 10px 100px;
+                        display: block;
+                        position: relative;
+                        a.button {
+                            width: 49%;
+                            float: left;
+                            text-align: center;
+                            line-height: 32px;
+                            color: #fff;
+                        }
+                        a.button:first-child {
+                            background-color: #43c0c2;
+                        }
+                        a.button:last-child {
+                            margin-left: 5px;
+                            background-color: #00B590;
+                        }
+                        dl {
+                            margin-top: 0;
+                            margin-left: 5px;
+                            min-height: 62px;
+                        }
+                        dd.content {
+                            font-size: 14px;
+                            color: #545454;
+                            line-height: 18px;
+                            margin-top: 8px;
+                        }
+                        dd.source {
+                            font-size: 13px;
+                            color: #969696;
+                            margin-top: 8px;
+                            margin-left: 0;
+                            border-top: dashed #d0d0d0 1px;
+                            padding-top: 8px;
+                        }
+                        dt:first-child {
+                            padding-top: 0;
+                        }
+                        dt {
+                            font-size: 18px;
+                            line-height: 18px;
+                            padding: 10px 10px 0 0;
+                            color: #333;
+                        }
+                        a {
+                            text-decoration: none;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        ol,
+        ul {
+            list-style: none;
+        }
+    }
+}

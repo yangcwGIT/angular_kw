@@ -1,0 +1,30 @@
+{
+  "name": "mmRouter",
+  "homepage": "https://github.com/RubyLouvre/mmRouter",
+  "authors": [
+    "RubyLouvre"
+  ],
+  "description": "The mmRouter provides routing for avalon apps.",
+  "main": "mmRouter.js",
+  "keywords": [
+    "router",
+    "avalon"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "73626e0cb3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "73626e0cb3046ca5dfb6abd0d5ceaa83332c00ff"
+  },
+  "_source": "git://github.com/RubyLouvre/mmRouter.git",
+  "_target": "*",
+  "_originalSource": "RubyLouvre/mmRouter"
+}
