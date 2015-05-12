@@ -2,44 +2,44 @@
         >
     <div class="container">
         <header>
-            <img ng-src="{{img}}" alt="" ng-repeat="img in Datas.imgs" />
+            <img ng-src="{{img}}" alt="" ng-repeat="img in Datas.imgs"/>
             <!--<img src="" alt=""/>-->
         </header>
-<div class="prolist">
-    <ul class="data-list" ng-repeat="pro in Datas['rcmdtProsList']">
-        <ol>
-            <li>
-                <a href="">
-                    <img
-                            ng-src="{{pro.icon}}"
-                            alt=""/>
-                    <dl>
-                        <dt>
-                            {{pro.u_nickname}}
-                        </dt>
-                        <dd class="content" >
-                            <span ng-repeat="tag in pro.tags" >
+        <div class="prolist">
+            <ul class="data-list" ng-repeat="pro in Datas['rcmdtProsList']">
+                <ol>
+                    <li>
+                        <a href="">
+                            <img
+                                    ng-src="{{pro.icon}}"
+                                    alt=""/>
+                            <dl>
+                                <dt>
+                                    {{pro.u_nickname}}
+                                </dt>
+                                <dd class="content">
+                            <span ng-repeat="tag in pro.tags">
                                 {{tag}} &nbsp;
 
                             </span>
 
-                        </dd>
-                        <dd class="source">
-                            {{pro.summary}}
-                        </dd>
-                    </dl>
-                </a>
+                                </dd>
+                                <dd class="source">
+                                    {{pro.summary}}
+                                </dd>
+                            </dl>
+                        </a>
 
-            </li>
-            <li>
-                <!--<a href="" class="btns">-->
-                    <a ng-href="kaowo://user/mainpage?uid={{pro.u_id}}" class="button">看看Ta的主页</a>
-                    <a ng-href="kaowo://communi/voicecall?uid={{pro.u_id}}" class="button">马上咨询</a>
-                <!--</a>-->
-            </li>
-        </ol>
-    </ul>
- </div>
+                    </li>
+                    <li>
+                        <!--<a href="" class="btns">-->
+                        <a ng-href="kaowo://user/mainpage?uid={{pro.u_id}}" class="button">看看Ta的主页</a>
+                        <a ng-href="kaowo://communi/voicecall?uid={{pro.u_id}}" class="button">马上咨询</a>
+                        <!--</a>-->
+                    </li>
+                </ol>
+            </ul>
+        </div>
 
     </div>
 </div>

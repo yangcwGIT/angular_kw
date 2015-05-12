@@ -12,6 +12,7 @@
             }
         },
         onChange    : function (vm) {
+            document.getElementById('indexTitle').innerHTML = '认证中心';
             require(['certiService'], function (certiService) {
                 certiService.GetProStaD({},function (err,querys) {
                     if (!err) {
@@ -33,9 +34,11 @@
                     }
                 });
             });
+        },onAfterLoad: function (){
+            document.getElementById('indexTitle').innerHTML = '认证中心';
         }
 
 
 
-        })
+    })
 })();

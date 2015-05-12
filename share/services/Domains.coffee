@@ -12,7 +12,9 @@ angular.module 'share'
       'prepro': 'http://api.dev.ikaowo.com'
     domainHosts=
       'm.dev.ikaowo.com':'prepro'
+      'local2dev.ikaowo.com':'prepro'
       'm.ikaowo.com':'main'
+      'local2main.ikaowo.com':'main'
       '192.168.8.107':'dev'
     env=domainHosts[domain] || 'dev'
     host=

@@ -1,4 +1,4 @@
-angular.module 'share',['ui.router','oc.lazyLoad','ngResource','lodash']
+angular.module 'share',['ui.router','oc.lazyLoad','ngResource','lodash','ngSanitize']
 angular.module 'share'
 .config ['$stateProvider','$urlRouterProvider','$locationProvider','$ocLazyLoadProvider','$compileProvider'
  (stateP,urlRP,localP,ocLazyP,compP)->

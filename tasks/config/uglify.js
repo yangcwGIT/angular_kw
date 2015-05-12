@@ -22,6 +22,7 @@ module.exports = function (grunt) {
                 'share/src/js/eventProxy.js',
                 'bower_components/idangerous-swiper/dist/idangerous.swiper.js',
                 'bower_components/angular/angular.js',
+                'bower_components/angular-sanitize/angular-sanitize.min.js',
                 'bower_components/angular-ui-router/release/angular-ui-router.min.js',
                 'bower_components/lodash/dist/lodash.min.js',
                 'bower_components/angular-resource/angular-resource.min.js',

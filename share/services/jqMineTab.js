@@ -4,7 +4,7 @@
 (function () {
     angular.module('share').factory('jqMineTab', ['$resource', '$location', function ($r, $l) {
         function jqTab() {
-            //console.log('jqTab');
+            console.log('jqTab');
             $(function () {
 
                 var kaoWo = {
@@ -57,31 +57,13 @@
                             $("#J_downBox").hide();
                             $("#J_conFixed").removeClass("mb_fixed");
                         })
-                        setTimeout(function () {
-                            if($(".j_commontBox>.kw_b2").length > 0){
-                                $("#J_no_commonts").hide();
-                                $(".j_commontBox").show();
-                            }
-                            else{
-                                $("#J_no_commonts").show();
-                                $(".j_commontBox").hide();
-                            }
-                            if($(".j_dynamicBox>.kw_b3").length > 0){
-                                $("#J_no_dynamic").hide();
-                                $(".j_dynamicBox").show();
-                            }
-                            else{
-                                $("#J_no_dynamic").show();
-                                $(".j_dynamicBox").hide();
-                            }
-                        },100);
                         //$("title.ng-binding").html("Datas.userInfo.nickname");
                         var _imgW = $(".kw_logo img").width();
                         $(".kw_logo img").height(_imgW);
-
                     }
                 });
                 kaoWo.init();
+
             })
         }
         return jqTab;

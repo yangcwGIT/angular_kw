@@ -1,6 +1,6 @@
 (function() {
   angular.module('share').controller('mineCtrl', [
-    '$scope', '$stateParams', '$state', '_', '$sce', 'jqMineTab', 'mineTab', '$timeout', function(scope, stateP, state, _, sce, jqMineTab, Service, $t) {
+    '$scope', '$stateParams', '$state', '_', '$sce', 'jqMineTab', 'mineTab', '$timeout', '$rootScope', function(scope, stateP, state, _, sce, jqMineTab, Service, $t, $rootScope) {
       var imgwParam, input, maindiv, tumblrSet, width;
       maindiv = document.getElementById("main");
       width = maindiv.offsetWidth + 200;
@@ -55,6 +55,7 @@
           return alert(err.data.msg);
         }
         if (datas.userInfo['ui_icon']) {
+          datas.userInfo['ui_icon_hide'] = datas.userInfo['ui_icon'] + (imgwParam + 300);
           datas.userInfo['ui_icon'] += imgwParam + 192;
         } else {
           datas.userInfo['ui_icon'] = 'share/src/images/ui_icon.png';
@@ -65,6 +66,9 @@
           datas.userInfo['backcover'] = 'share/src/images/backcover.png';
         }
         scope.Datas.userInfo = datas.userInfo;
+        console.log(datas.userInfo);
+        $rootScope.title = "靠我专家" + scope.Datas.userInfo.nickname + "的主页 - 靠我电商智慧交易平台";
+        $rootScope.content = scope.Datas.userInfo.ui_summary;
         ref = datas.tumblr;
         for (i = 0, len = ref.length; i < len; i++) {
           tumblr = ref[i];
@@ -72,9 +76,7 @@
         }
         scope.Datas.poList = datas.poList;
         scope.Datas.cmmtList = datas.cmmtList;
-        scope.Datas.tags = datas.tags;
-        $("title.ng-binding").html(datas.userInfo.nickname + "的主页");
-        return $("head").append('<meta name="description" content=' + datas.userInfo.ui_summary + '/>');
+        return scope.Datas.tags = datas.tags;
       });
       return scope.$on('$viewContentLoaded', function() {
         var jqTable;

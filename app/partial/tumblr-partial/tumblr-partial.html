@@ -28,9 +28,9 @@
             <h2>个人简介</h2>
 
             <div class="content">
-                <p class="summary text">
-                    {{Datas.summary}}
-                </p>
+                <div class="summary text" ng-bind-html="Datas.summary">
+
+                </div>
 
                 <div class="addition">
 
@@ -58,10 +58,13 @@
 
 
                     <div class="row" ng-repeat="tb in Datas.tumblr">
-                        <a href="kaowo://user/mainpagephotos?currentindex={{tb.sq}}&imgs={{Datas.allUrl}}">
-                            <img ng-src="{{tb.tbr_img}}" alt="">
-                        </a>
 
+
+                        <!--<img ng-src="{{tb.tbr_img}}" alt="">-->
+                        <div id="thumbs">
+                            <!--<a href="{{tb.tbr_img}}"><img ng-src="{{tb.tbr_img}}" /></a>-->
+                            <img ng-src="{{tb.tbr_img}}" />
+                        </div>
 
                         <p style="word-wrap: break-word;word-break: normal;">{{tb.tbr_txt}}</p>
                     </div>

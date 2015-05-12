@@ -1,12 +1,11 @@
 /**
  * Created by jyo on 15-3-17.
  */
-angular.module('kaowoApp', ['ui.router','ngAnimate','oc.lazyLoad','ngResource','lodash']);
+angular.module('kaowoApp', ['ui.router','ngAnimate','oc.lazyLoad','ngResource','lodash','ngSanitize']);
 angular.module('kaowoApp')
     .config(function ($stateProvider, $urlRouterProvider,$locationProvider,$ocLazyLoadProvider,$compileProvider) {
         $locationProvider.hashPrefix('');
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|kaowo|ftp|mailto|chrome-extension):/);
-
         //$compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|kaowo):/);
         $stateProvider
             .state('ad-partial', {
@@ -31,21 +30,17 @@ angular.module('kaowoApp')
                     loadMyCtrl: ['$ocLazyLoad', '$rootScope',function($ocLazyLoad,$rootScope) {
                         return $ocLazyLoad.load(
                             [
-
                                 'app/partial/ad-partial/adCtrl.js'
                             ]
                         )
                     }]
                 }
-
                 //controller:'adCtrl'
             })
             .state('tumblr', {
-                url: '/tumblr?u_id&imgw&kk&sc',
-
+                url: '/tumblr?u_id&imgw&kk',
                 templateUrl: 'app/partial/tumblr-partial/tumblr-partial.html',
                 controller : 'tumblrCtrl',
-
                 resolve: {
                     loadMyCtrl: ['$ocLazyLoad', function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
@@ -124,7 +119,6 @@ angular.module('kaowoApp')
         $ocLazyLoadProvider.config({
             debug: true,
             events: true
-
         });
     })
     .directive('slideable', function () {
@@ -134,7 +128,6 @@ angular.module('kaowoApp')
                 // wrap tag
                 var contents = element.html();
                 element.html('<div class="slideable_content" style="margin:0 !important; padding:0 !important" >' + contents + '</div>');
-
                 return function postLink(scope, element, attrs) {
                     // default properties
                     attrs.duration = (!attrs.duration) ? '1s' : attrs.duration;
@@ -155,9 +148,7 @@ angular.module('kaowoApp')
             restrict: 'A',
             link: function(scope, element, attrs) {
                 var target, content;
-
                 attrs.expanded = false;
-
                 element.bind('click', function() {
                     if (!target) target = document.querySelector(attrs.slideToggle);
                     if (!content) content = target.querySelector('.slideable_content');
@@ -174,7 +165,6 @@ angular.module('kaowoApp')
             }
         }
     });
-
 function removejscssfile(filename, filetype){
     var targetelement=(filetype=="js")? "script" : (filetype=="css")? "link" : "none"; //determine element type to create nodelist from
     var targetattr=(filetype=="js")? "src" : (filetype=="css")? "href" : "none"; //determine corresponding attribute to test for

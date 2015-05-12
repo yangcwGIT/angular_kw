@@ -1,0 +1,111 @@
+<div id="hotRanking">
+    <div class="container">
+        <header ng-repeat="img in Datas.images.images_header">
+            <img ng-src="{{img}}" alt="">
+        </header>
+        <!--直通车优化-->
+        <section class="con_box clearfix">
+            <div class="sidebar">问：上新多款，如何直通车测款，推出主打款?</div>
+            <div class="sidebar">问：新品上新了很多款，如何直通车测款，推出主打款？</div>
+            <div class="sidebar">问：为什么直通车我出价高于行业均价2倍了都，还是在前几位找不到我的产品？</div>
+            <div ng-show="view1">
+                <div class="sidebar">问：手机段直通车计划，出价4.5元还不是大词，都没有展现，得分还低，如何破？</div>
+                <div class="sidebar">问：如何单独开启无线直通车，无线直通车标有时候有，有时候没有？</div>
+                <div class="sidebar">问：直通车创意增加一个，测试三天后，发现比不上一个，如何优化创意，什么创意才是好创意？</div>
+                <div class="sidebar">问：我是集市女鞋店铺的，最近直通车开得很不好，想求解下关于直通车的一些运营思路？</div>
+            </div>
+            <a class="sidebar btn_long" href="javascript:void(0)" ng-click="toggle1()">{{btnHtml1}}</a>
+
+            <div class="first_b">
+                <div class="intro_box" ng-repeat="img in Datas.images.imgs_1">
+                    <img ng-src="{{img}}" alt="">
+                </div>
+                <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_1">
+                    <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}">看看Ta的主页</a>
+                    <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}">马上咨询</a>
+                </div>
+            </div>
+            <div class="">
+                <div class="intro_box" ng-repeat="img in Datas.images.imgs_2">
+                    <img ng-src="{{img}}" alt="">
+                </div>
+                <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_2">
+                    <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}">看看Ta的主页</a>
+                    <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}">马上咨询</a>
+                </div>
+            </div>
+        </section>
+        <!--打造爆款-->
+        <section class="midd_img" ng-repeat="img in Datas.images.imgs_3">
+            <img ng-src="{{img}}" alt="">
+        </section>
+        <section class="con_box clearfix">
+            <div class="sidebar">问：如何店铺定位，品牌价值，爆款策划等问题？</div>
+            <div class="sidebar">问：旺季来了，如何快速打造爆款？</div>
+            <div class="sidebar">问：打造爆款做哪些准备工作？</div>
+            <div ng-show="view2">
+                <div class="sidebar">问：现在销量权重下调，爆款作用还大吗？</div>
+                <div class="sidebar">问：我去年的爆款今年销量严重下滑，还有什么补救的办法吗？</div>
+                <div class="sidebar">问：爆款的销量达到多少，才能上首页？</div>
+                <div class="sidebar">问：哪些官方和第三方活动对打造爆款有帮助？</div>
+            </div>
+            <a class="sidebar btn_long" href="javascript:void(0)" ng-click="toggle2()">{{btnHtml2}}</a>
+
+            <div class="first_b">
+                <div class="intro_box" ng-repeat="img in Datas.images.imgs_4">
+                    <img ng-src="{{img}}" alt="">
+                </div>
+                <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_3">
+                    <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}">看看Ta的主页</a>
+                    <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}">马上咨询</a>
+                </div>
+            </div>
+
+
+            <div class="">
+                <div class="intro_box" ng-repeat="img in Datas.images.imgs_5">
+                    <img ng-src="{{img}}" alt="">
+                </div>
+                <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_4">
+                    <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}">看看Ta的主页</a>
+                    <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}">马上咨询</a>
+                </div>
+            </div>
+        </section>
+        <!--自然搜索-->
+        <section class="midd_img" ng-repeat="img in Datas.images.imgs_6">
+            <img ng-src="{{img}}" alt="">
+        </section>
+        <section class="con_box clearfix">
+            <div class="sidebar">问：上首页有哪些排名规则？哪些权重会影响搜索？</div>
+            <div class="sidebar">问：如何查看自己产品在搜索结果排名？</div>
+            <div class="sidebar">问：怎么上豆腐块？</div>
+            <div ng-show="view3">
+                <div class="sidebar">问：前面三页都搜索不出我的产品？</div>
+                <div class="sidebar">问：如果通过优化标题让搜索考前？</div>
+            </div>
+            <a class="sidebar btn_long" href="javascript:void(0)" ng-click="toggle3()">{{btnHtml3}}</a>
+
+            <div class="first_b">
+                <div class="intro_box" ng-repeat="img in Datas.images.imgs_7">
+                    <img ng-src="{{img}}" alt="">
+                </div>
+                <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_5">
+                    <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}">看看Ta的主页</a>
+                    <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}">马上咨询</a>
+                </div>
+            </div>
+
+
+            <div class="">
+                <div class="intro_box" ng-repeat="img in Datas.images.imgs_8">
+                    <img ng-src="{{img}}" alt="">
+                </div>
+                <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_6">
+                    <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}">看看Ta的主页</a>
+                    <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}">马上咨询</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

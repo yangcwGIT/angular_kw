@@ -1,0 +1,77 @@
+<div id="pro-certi">
+    <div class="container certi" style=" padding-left: 0px; padding-right: 0px;">
+        <div class="header">
+            <img ng-repeat="imgs in Datas.imgs_header" ng-src="{{imgs}}" alt="">
+        </div>
+        <div class="content">
+            <div class="title">
+                <i class="icon-tag"></i>
+                <span ng-bind="Datas.ttl"></span>
+            </div>
+            <div class="card-list">
+                <!-- for 遍历开始 -->
+                <div class="card" ng-repeat="nums in Datas.proList">
+                    <div class="card_img">
+                        <img ng-repeat="img in Datas.imgs_top" ng-src="{{img}}" class="top">
+                    </div>
+                    <div class="content">
+                        <div class="badge">
+                            <img src="http://ad-ikaowo.qiniudn.com/certi-badge_01.png">
+                        </div>
+                        <div class="row sub" id="sub">
+                            <img class="avatar" style="height:{{Datas.iconWidht}}px" ng-src="{{Datas.oIcon[nums]}}">
+
+                            <div class="add">
+                                <b>{{Datas.oName[nums]}}</b>
+
+                                <p>
+                                <nobr style="white-space:normal; width:100%; line-height: 18px">
+                                    <span class="goodat">
+                                      <i class="icon-tag"></i> 擅长
+                                    </span>
+                                    <span>{{Datas.oTags[nums]}}</span>
+                                </nobr>
+                                </p>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="row describe">
+                            {{Datas.oSummary[nums]}}
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img ng-repeat="imgs in Datas.imgs_bottom1" ng-src="{{imgs}}">
+                        <a ng-href="kaowo://communi/voicecall?uid={{Datas.oUid[nums]}}" class="callnow">
+                            <img ng-repeat="imgs in Datas.imgs_bottom2" ng-src="{{imgs}}">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="intro">
+                <div class="title">
+                    <i class="icon-tag"></i>
+                    <span>详细说明</span>
+                </div>
+                <div class="content">
+                    <p>1.
+                        「靠我」电商智慧交易平台中所有上线专家，均经过透明、公开、科学的流程进行过认证，在一定程度上保证了您在应用内付费咨询的质量。如您在日常的咨询使用中，对专家的服务质量不满意时，您可以联系靠我客服人员进行协调解决。邮箱：yyqd@ikaowo.com，微信公众号：靠我。
+                    </p>
+
+                    <p>2.
+                        专家认证中心的相关咨询服务，目前仅支持“专家评审团”成员参与体验。“专家评审团”成员从靠我平台的活跃用户筛选而来，工作人员将依据在线时间、活跃度、专业性等多个角度进行严格的筛选。如果您有意加入“专家评审团”，您可以向我们的工作人员提出申请。联系邮箱：jason@ikaowo.com。</p>
+
+                    <p>3.
+                        “专家评审团”中的成员将可以向列表中的“准专家”拨打30分钟以内的免费咨询电话，从专业地角度对“准专家”的技能进行初步评估，通话结束后，将按照正常咨询流程为该“准专家”进行评分，并提交对应评测表给予我们的工作人员。</p>
+
+                    <p>4. 列表中的每位“准专家”在得到10位以上“专家评审团”成员的优秀评价以及靠我的工作人员综合评估，方可正式成为靠我平台认证专家。</p>
+
+                    <p>5. 专家评审团用户包含电商创业者及电商从业者包含（淘宝，京东，微商，o2o，跨境电商，农业淘宝等）</p>
+
+                    <p>6. 其他未尽事宜以靠我官方工作联络渠道的答复为准，靠我将会在法律权限最大化场景下对本活动持有最终解释权。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

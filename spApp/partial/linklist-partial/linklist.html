@@ -1,0 +1,27 @@
+<div id="linklist" >
+    <header>
+        <!--<div class="con hide">
+            <div class="fl glass"></div>
+            <div class="fl placeholder">找专家</div>
+        </div>-->
+        <div class="input_con">
+            <div class="glass fl"></div>
+            <!--            <from method="post" ng-enter="Btns.search()" action="kaowo://search?keywords={{search.name}}">-->
+            <from method="post" ng-enter="Btns.search(Datesearch)">
+                <input type="text" placeholder="{{Search}}" ng-model="Datesearch.name">
+            </from>
+        </div>
+    </header>
+    <section>
+        <ul class="btn_box fl">
+            <a ng-href="{{Dates.lTarget[btn]}}" ng-hide="'{{Dates.lName[btn]}}'=='更多'" ng-repeat="btn in Dates.cmmtList">
+                <li class="box">
+                    <img ng-src="{{Dates.lIcon[btn]}}" />
+                    <p ng-show="'{{Dates.lTarget[btn]}}'!=''">{{Dates.lName[btn]}}</p>
+                    <p class="gray" ng-show="'{{Dates.lTarget[btn]}}'==''">{{Dates.lName[btn]}}</p>
+                </li>
+            </a>
+        </ul>
+    </section>
+    <div class="bottem_bar">灰色图标即将开放咨询，尽请期待！</div>
+</div>
