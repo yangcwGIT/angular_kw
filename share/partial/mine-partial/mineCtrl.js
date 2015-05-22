@@ -67,7 +67,7 @@
         }
         scope.Datas.userInfo = datas.userInfo;
         console.log(datas.userInfo);
-        $rootScope.title = "靠我专家" + scope.Datas.userInfo.nickname + "的主页 - 靠我电商智慧交易平台";
+        $rootScope.title = scope.Datas.userInfo.nickname + " - 「靠我」智慧交易平台";
         $rootScope.content = scope.Datas.userInfo.ui_summary;
         ref = datas.tumblr;
         for (i = 0, len = ref.length; i < len; i++) {
@@ -76,7 +76,15 @@
         }
         scope.Datas.poList = datas.poList;
         scope.Datas.cmmtList = datas.cmmtList;
-        return scope.Datas.tags = datas.tags;
+        scope.Datas.tags = datas.tags;
+        scope.Datas.isproReturn = scope.Datas.userInfo.ispro === 'T';
+        scope.Datas.isproReturnF = scope.Datas.userInfo.ispro !== 'T';
+        if (scope.Datas.isproReturnF) {
+          document.getElementById("j_isproF").style.width = 0;
+          document.getElementById("j_isproF").style.height = 0;
+          document.getElementById("j_isproF").style.overflow = 'hidden';
+        }
+        return window.location.href = "kaowo://location-end?title=" + $rootScope.title + "&description=" + $rootScope.content;
       });
       return scope.$on('$viewContentLoaded', function() {
         var jqTable;

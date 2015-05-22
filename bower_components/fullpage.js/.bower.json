@@ -1,6 +1,6 @@
 {
   "name": "fullpage.js",
-  "version": "2.6.2",
+  "version": "2.6.5",
   "homepage": "http://alvarotrigo.com/fullPage/",
   "authors": [
     "Alvaro Trigo https://github.com/alvarotrigo"
@@ -9,6 +9,7 @@
   "main": [
     "jquery.fullPage.js",
     "jquery.fullPage.css",
+    "jquery.fullPage.scss",
     "vendors/jquery.easings.min.js",
     "vendors/jquery.slimscroll.min.js"
   ],
@@ -29,16 +30,15 @@
     "examples"
   ],
   "dependencies": {
-    "jquery": "1.x"
+    "jquery": ">=1.6.0"
   },
-  "_release": "2.6.2",
+  "_release": "2.6.5",
   "_resolution": {
     "type": "version",
-    "tag": "2.6.2",
-    "commit": "b7e1ec1f81933d8ed15ead90fefb2380055f882c"
+    "tag": "2.6.5",
+    "commit": "40cba2544421846a0e929e9670ce688e79ee18b6"
   },
   "_source": "git://github.com/alvarotrigo/fullPage.js.git",
   "_target": "~2.6.2",
-  "_originalSource": "fullpage.js",
-  "_direct": true
+  "_originalSource": "fullpage.js"
 }

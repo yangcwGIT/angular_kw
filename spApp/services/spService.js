@@ -36,12 +36,3 @@ angular
             })*/
         }
     });
-
-
-//avalon.post(host+'/mana/apply',{
-//    nickname:data.name,
-//    phone:data.phone,
-//    summary:data.summary
-//} ).then(function(result) {
-//    return cb(null,result);
-//});

@@ -1,4 +1,4 @@
-<div id="linklist" >
+<div id="linklist">
     <header>
         <!--<div class="con hide">
             <div class="fl glass"></div>
@@ -14,14 +14,24 @@
     </header>
     <section>
         <ul class="btn_box fl">
-            <a ng-href="{{Dates.lTarget[btn]}}" ng-hide="'{{Dates.lName[btn]}}'=='更多'" ng-repeat="btn in Dates.cmmtList">
+            <a ng-href="{{Dates.lTarget[btn]}}" ng-hide="'{{Dates.lName[btn]}}'=='更多'"
+               ng-repeat="btn in Dates.cmmtList">
                 <li class="box">
-                    <img ng-src="{{Dates.lIcon[btn]}}" />
+                    <img ng-src="{{Dates.lIcon[btn]}}"/>
+
                     <p ng-show="'{{Dates.lTarget[btn]}}'!=''">{{Dates.lName[btn]}}</p>
+
                     <p class="gray" ng-show="'{{Dates.lTarget[btn]}}'==''">{{Dates.lName[btn]}}</p>
                 </li>
             </a>
         </ul>
     </section>
     <div class="bottem_bar">灰色图标即将开放咨询，尽请期待！</div>
+    <textarea style="display:none" id="J_pageData">
+        <!--"showRefresh"：刷新按钮（T——显示，F——隐藏），-->
+        <!--"showBack"：后退按钮（T——显示，F——隐藏），-->
+        <!--"showForward"：前进按钮（T——显示，F——隐藏），-->
+        <!--"showBottom"：整个底部栏（T——显示，F——隐藏）-->
+        { "showRefresh" : "F", "showBack" : "F", "showForward" : "F", "showBottom" : "F" }
+    </textarea>
 </div>

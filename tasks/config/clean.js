@@ -6,8 +6,8 @@ module.exports = function (grunt) {
 
 
     grunt.config.set('clean',{
-        'ngapp-before': {
-            src: ['dist/ngapp','dist/app','dist/avalon' ,'temp']
+        'app-before': {
+            src: ['dist/app','temp']
         },
         'spapp-before':{
             src: ['dist/spApp', 'temp']

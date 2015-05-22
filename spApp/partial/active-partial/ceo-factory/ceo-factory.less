@@ -1,0 +1,140 @@
+html {
+  font-size: 20px;
+}
+
+#ceo-factory {
+  .container {
+    a:link {
+      background: none !important;
+    }
+    a.callnow:active {
+      -webkit-user-select: none;
+    }
+    a.callnow:active, a.callnow:hover {
+      webkit-touch-callout: none;
+    }
+    img {
+      width: 100%;
+    }
+    .header {
+      font-size: 0;
+    }
+    .content {
+      position: relative;
+
+      .intro_box {
+        font-size: 0
+      }
+
+      .btn_box {
+        position: absolute;
+        top: -3.9rem;
+        width: 53%;
+        margin-left: 34%;
+        height: 2.8rem;
+        &.last {
+          top: -8.3rem;
+        }
+        .btn {
+          width: 45%;
+          height: 2.8rem;
+          line-height: 3rem;
+          cursor: pointer;
+        }
+
+      }
+    }
+
+  }
+  @media screen and (max-width: 480px) {
+    .container {
+
+      .content {
+        .btn_box {
+          top: -2.9rem;
+          width: 53%;
+          margin-left: 34%;
+          height: 1.5rem;
+          &.last {
+            top: -6.3rem;
+          }
+          .btn {
+            width: 45%;
+            height: 2.2rem;
+          }
+
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .container {
+
+      .content {
+        .btn_box {
+          top: -2.5rem;
+          width: 53%;
+          margin-left: 34%;
+          height: 1.5rem;
+          &.last {
+            top: -5.3rem;
+          }
+          .btn {
+            width: 45%;
+            height: 2rem;
+          }
+
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .container {
+
+      .content {
+        .btn_box {
+          top: -2.5rem;
+          width: 53%;
+          margin-left: 34%;
+          height: 1.5rem;
+          &.last {
+            top: -5rem;
+          }
+          .btn {
+            width: 45%;
+            height: 1.8rem;
+          }
+
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .container {
+
+      .content {
+        .btn_box {
+          top: -2rem;
+          width: 53%;
+          margin-left: 34%;
+          height: 1.2rem;
+          &.last {
+            top: -4.3rem;
+          }
+          .btn {
+            width: 45%;
+            height: 1.5rem;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

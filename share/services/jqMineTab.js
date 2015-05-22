@@ -60,6 +60,9 @@
                         //$("title.ng-binding").html("Datas.userInfo.nickname");
                         var _imgW = $(".kw_logo img").width();
                         $(".kw_logo img").height(_imgW);
+                        setTimeout(function(){
+                            $("#j_swiper-slide3").css("width","100%")
+                        },500)
                     }
                 });
                 kaoWo.init();

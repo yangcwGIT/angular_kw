@@ -9,12 +9,12 @@ module.exports = function (grunt) {
         sourceMap   : true
     };
     grunt.config.set('less', {
-        production: {
-            options: {},
-            files  : {
-                'src/styles/app.css': ['app/less/*.less']
-            }
-        },
+        //production: {
+        //    options: {},
+        //    files  : {
+        //        'src/styles/app.css': ['app/less/*.less']
+        //    }
+        //},
         ngless    : {
             options:lessOptions,
             files  : [{

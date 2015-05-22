@@ -1,0 +1,106 @@
+<div id="ceo-factory">
+    <div class="container">
+        <div class="header">
+            <img ng-repeat="imgs in Datas.images.images_header" ng-src="{{imgs}}" alt="">
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_1">
+                <img ng-src="{{img}}" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_2">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_1">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_3">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_2">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_4">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_3">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_5">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_4">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_6">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_5">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_7">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_6">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_8">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_7">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_9">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_8">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="intro_box" ng-repeat="img in Datas.images.imgs_10">
+                <img ng-src="{{img}}" alt="">
+            </div>
+            <div class="btn_box clearfix" ng-repeat="userid in Datas.userId.user_9">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="btn_box last clearfix" ng-repeat="userid in Datas.userId.user_10">
+                <a class="btn left_btn fl" ng-href="kaowo://user/mainpage?uid={{userid}}"></a>
+                <a class="btn right_btn fr" ng-href="kaowo://communi/voicecall?uid={{userid}}"></a>
+            </div>
+        </div>
+    </div>
+    <textarea style="display:none" id="J_pageData">
+        <!--"showRefresh"：刷新按钮（T——显示，F——隐藏），-->
+        <!--"showBack"：后退按钮（T——显示，F——隐藏），-->
+        <!--"showForward"：前进按钮（T——显示，F——隐藏），-->
+        <!--"showBottom"：整个底部栏（T——显示，F——隐藏）-->
+        { "showRefresh" : "F", "showBack" : "F", "showForward" : "F", "showBottom" : "F" }
+    </textarea>
+</div>

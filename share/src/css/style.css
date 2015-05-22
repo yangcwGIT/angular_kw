@@ -8,7 +8,7 @@ body{
     font-size: 2rem;
     font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontVsoicon,sans-serif;
     color: #999;
-    background: #efeff4;
+    /*background: #efeff4;*/
     font-weight: 300
 }
 a{
@@ -63,7 +63,7 @@ a{
     /*border-bottom: #ccc 1px solid*/
 }
 .kw_star0,.kw_star1,.kw_star2,.kw_star3,.kw_star4,.kw_star5,.swiper-slide .i_tag,.swiper-slide .kw_b3 .b3_bottom .i_zan,.swiper-slide .kw_b3 .b3_bottom .i_review,.kw_fixed .kw_downBox .i_close{
-    background: url(src/images/kw_icon.png);
+    background: url(../images/kw_icon.png);
     width: 210px;
     height: 35px;
 }
@@ -315,7 +315,7 @@ a{
     line-height: 100px
 }
 .kw_fixed .kw_downBox .btn .icon{
-    background: url(src/images/icon.png);
+    background: url(../images/icon.png);
     width: 66px;
     height: 66px;
     margin: 19px 15px 0 25px;

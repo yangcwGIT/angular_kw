@@ -14,14 +14,15 @@ module.exports = function (grunt) {
                 spawn            : false
             },
             files  : [createFolderGlobs(['*.less', '*.html', 'app/*/*.js']), '!_SpecRunner.html', '!.grunt'],
-            tasks  : ['less', 'copy:avalon']
+            //tasks  : ['less', 'copy:avalon']
+            tasks  : ['less']
             //all the tasks are run dynamically during the watch event handler
         },
         dist: {
             options: {
                 livereload       : 35730,
                 livereloadOnError: false,
-                spawn            : false,
+                spawn            : false
 
 
             },

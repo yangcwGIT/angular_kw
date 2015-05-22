@@ -2,6 +2,17 @@
 .idea/
 node_modules/
 
+app/**/*.css
+app/**/**/*.css
+
+spApp/**/**/*.css
+spApp/**/**/**/*.css
+
+share/partial/mine-partial/mineCtrl.js
+share/partial/mine-partial/mineCtrl.js.map
+share/partial/mine-partial/mineCtrl.map
+share/partial/mine-partial/*.css
+
 dist/
 
 bower_components/

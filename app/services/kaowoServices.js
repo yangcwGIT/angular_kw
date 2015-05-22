@@ -15,9 +15,11 @@ angular
                 'prepro': 'http://api.dev.ikaowo.com/v1'
             },
             domainHosts={
-                'm.dev.ikaowo.com':'prepro',
-                'm.ikaowo.com':'main',
-                '192.168.8.107':'dev'
+                'm.dev.ikaowo.com': 'prepro',
+                'local2dev.ikaowo.com':'prepro',
+                'm.ikaowo.com': 'main',
+                'local2main.ikaowo.com':'main',
+                '192.168.8.107': 'dev'
             };
         env=domainHosts[domain] || 'dev';
         host=hosts[env];

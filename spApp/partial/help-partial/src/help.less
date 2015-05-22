@@ -1,0 +1,109 @@
+html {
+	font-size: 20px;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 100%;
+	background: #fff;
+	.title, ul li {
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+		//border-top: 1px solid #ccc;
+		height: 3.5rem;
+		line-height: 3.5rem;
+		color: #999;
+		padding: 0 1.2rem;
+		font-size: 1.5rem;
+		&.header {
+			background: #f0eff5;
+			color: #333;
+			height: 4rem;
+			line-height: 4.8rem;
+		}
+
+	}
+	.fix_top {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	ul {
+		padding-left: 1.2rem;
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+
+		li {
+			padding: 0;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+			a {
+				display: block;
+				background: #fff;
+				color: #999;
+
+				img{
+					float: right;
+					display: block;
+					width: 1rem;
+					margin: .9rem 1rem 0 0;
+				}
+			}
+		}
+
+	}
+	.con {
+		padding: 1.2rem;
+
+		p {
+			/*text-indent: 2em;*/
+			font-size: 1.3rem;
+			line-height: 160%;
+			color: #999;
+			margin-bottom: 0.8rem;
+		}
+
+		&.pos_fix{
+			margin-top: 3.5rem;
+		}
+	}
+
+	.intro {
+		img {
+			width: 60%;
+			margin: 30% auto 2%;
+			display: block;
+		}
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 375px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	html {
+		font-size: 10px;
+	}
+}

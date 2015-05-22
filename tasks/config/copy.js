@@ -6,54 +6,54 @@ module.exports = function (grunt) {
     grunt.config.set('copy', {
         main  : {
             files: [
-                {
-                    src    : [
-                        'bower_components/mmRouter/avalon.mobile.js',
-                        'bower_components/mmRouter/mmRouter.js',
-                        'bower_components/mmRouter/mmState.js',
-                        'bower_components/mmRouter/mmPromise.js',
-                        'bower_components/mmRouter/mmHistory.js'
-                    ], dest: 'dist/avalon', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
-                {
-                    src    : ['src/styles/pages/tumblr-list/css/*'], dest: 'dist/assets', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
-                {
-                    src    : ['src/styles/pages/tumblr-list/css/iconfont/*'], dest: 'dist/iconfont', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
-                {
-                    src    : ['src/scripts/mmRequest.js'], dest: 'dist/avalon', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
-                {
-                    src: ['app/views/*.html'], dest: 'dist/', filter: 'isFile'
-                    //flatten: true,
-                    //expand:true
-                },
-                {
-                    src    : ['app/controllers/**'], dest: 'dist/avalon', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
-                {
-                    src    : ['app/services/**'], dest: 'dist/avalon', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
+                //{
+                //    src    : [
+                //        'bower_components/mmRouter/avalon.mobile.js',
+                //        'bower_components/mmRouter/mmRouter.js',
+                //        'bower_components/mmRouter/mmState.js',
+                //        'bower_components/mmRouter/mmPromise.js',
+                //        'bower_components/mmRouter/mmHistory.js'
+                //    ], dest: 'dist/avalon', filter: 'isFile',
+                //    flatten: true,
+                //    expand : true
+                //},
+                //{
+                //    src    : ['src/styles/pages/tumblr-list/css/*'], dest: 'dist/assets', filter: 'isFile',
+                //    flatten: true,
+                //    expand : true
+                //},
+                //{
+                //    src    : ['src/styles/pages/tumblr-list/css/iconfont/*'], dest: 'dist/iconfont', filter: 'isFile',
+                //    flatten: true,
+                //    expand : true
+                //},
+                //{
+                //    src    : ['src/scripts/mmRequest.js'], dest: 'dist/avalon', filter: 'isFile',
+                //    flatten: true,
+                //    expand : true
+                //},
+                //{
+                //    src: ['app/views/*.html'], dest: 'dist/', filter: 'isFile'
+                //    //flatten: true,
+                //    //expand:true
+                //},
+                //{
+                //    src    : ['app/controllers/**'], dest: 'dist/avalon', filter: 'isFile',
+                //    flatten: true,
+                //    expand : true
+                //},
+                //{
+                //    src    : ['app/services/**'], dest: 'dist/avalon', filter: 'isFile',
+                //    flatten: true,
+                //    expand : true
+                //},
                 {
                     src   : ['app/less/**', 'app/partial/**', 'bower_components/fullpage.js/jquery.fullPage.css'],
                     dest  : 'dist/',
                     fulter: 'isFile'
                 },
                 {
-                    src    : ['bower_components/jquery/dist/jquery.min.map'], dest: 'dist/ngapp', filter: 'isFile',
+                    src    : ['bower_components/jquery/dist/jquery.min.map'], dest: 'dist/app/src', filter: 'isFile',
                     flatten: true,
                     expand : true
                 },
@@ -65,15 +65,24 @@ module.exports = function (grunt) {
                 }
             ]
         },
-        avalon: {
+        //avalon: {
+        //    files: [
+        //        {
+        //            src    : ['app/controllers/**'], dest: 'dist/avalon', filter: 'isFile',
+        //            flatten: true,
+        //            expand : true
+        //        },
+        //        {
+        //            src    : ['app/services/**'], dest: 'dist/avalon', filter: 'isFile',
+        //            flatten: true,
+        //            expand : true
+        //        }
+        //    ]
+        //},
+        srcimg: {
             files: [
                 {
-                    src    : ['app/controllers/**'], dest: 'dist/avalon', filter: 'isFile',
-                    flatten: true,
-                    expand : true
-                },
-                {
-                    src    : ['app/services/**'], dest: 'dist/avalon', filter: 'isFile',
+                    src    : ['src/img/*'], dest: 'dist/src/img/', filter: 'isFile',
                     flatten: true,
                     expand : true
                 }
@@ -86,7 +95,7 @@ module.exports = function (grunt) {
                     expand : true
                 },
                 {
-                    src    : ['bower_components/angular-resource/*.map'], dest: 'dist/spApp', filter: 'isFile',
+                    src    : ['bower_components/angular-resource/*.map'], dest: 'dist/spApp/src', filter: 'isFile',
                     flatten: true,
                     expand : true
                 }
