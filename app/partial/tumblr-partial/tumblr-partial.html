@@ -21,11 +21,41 @@
 
             </div>
         </div>
+        <div class="field profession" ng-show="showBox">
+            <h2>
+                服务单价
+                <button class="btn fr" ng-click="getPromo()" ng-show="getCoupon">获取优惠</button>
+            </h2>
+
+            <div class="content">
+                <p>
+                    <span>图文咨询：{{Datas.alPrice|currency : '￥'}} / 次</span><span class="bg" ng-show="couponDetails">已优惠{{Datas.couponPrice|currency : '￥'}}</span><br/>
+                    <span>电话咨询：{{Datas.price|currency : '￥'}} / 分钟</span>
+                </p>
+
+            </div>
+        </div>
+        <div class="field profession" ng-hide="showBox">
+            <h2>
+                服务单价<span class="code" ng-hide="showNext">优惠将用于{{Datas.u_name}}帐户</span>
+                <a href="javascript:void(0)" ng-click="closePromo()" class="icon fr"><img src="http://7xixti.com2.z0.glb.qiniucdn.com/cancel.png" /> </a>
+            </h2>
+
+            <div class="content" ng-show="showNext">
+                <input class="input_text" type="text" placeholder="输入你的注册手机号码" ng-model="Datas.yourPhone" maxlength="11" />
+                <button class="btn fr" ng-disabled="toRewardBtn" ng-style="style" ng-click="nextForm()">下一步</button>
+            </div>
+
+            <div class="content" ng-hide="showNext">
+                <input class="input_text" type="text" placeholder="输入优惠码" ng-model="Datas.promoCode" />
+                <button class="btn fr" ng-disabled="toOverBtn" ng-style="style" ng-click="dataForm()">完成</button>
+            </div>
+        </div>
         <div class="field detail end">
             <h2>个人简介</h2>
 
             <div class="content">
-                <div class="summary text" ng-bind-html="Datas.summary">
+                <div class="summary text" ng-bind-html="Datas.ui_summary">
 
                 </div>
 
@@ -40,14 +70,14 @@
                                 style="width: 100%"
                                 >
 
-                                </video>
-                       <!-- <iframe
+                        </video>
+                        <!-- <iframe
 
-                                type="text/html"
-                                style="width: 100%"
-                                ng-src="{{trustSrc(video.tbr_img)}}"
-                                allowfullscreen
-                                frameborder="0" ></iframe>-->
+                                 type="text/html"
+                                 style="width: 100%"
+                                 ng-src="{{trustSrc(video.tbr_img)}}"
+                                 allowfullscreen
+                                 frameborder="0" ></iframe>-->
 
 
                         <p style="word-wrap: break-word;word-break: normal;">{{video.tbr_txt}}</p>
@@ -60,7 +90,7 @@
                         <!--<img ng-src="{{tb.tbr_img}}" alt="">-->
                         <div id="thumbs">
                             <!--<a href="{{tb.tbr_img}}"><img ng-src="{{tb.tbr_img}}" /></a>-->
-                            <img ng-src="{{tb.tbr_img}}" />
+                            <img ng-src="{{tb.tbr_img}}"/>
                         </div>
 
                         <p style="word-wrap: break-word;word-break: normal;">{{tb.tbr_txt}}</p>

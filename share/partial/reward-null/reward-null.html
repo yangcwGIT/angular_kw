@@ -1,0 +1,13 @@
+<div id="main">
+    <section class="reward-top">
+        <img ng-repeat="img in Datas.imgs" ng-src="{{img}}" alt="">
+    </section>
+    <p class="mull_midd">你会是第一个打赏Ta的人吗？</p>
+    <textarea style="display:none" id="J_pageData">
+        <!--"showRefresh"：刷新按钮（T——显示，F——隐藏），-->
+        <!--"showBack"：后退按钮（T——显示，F——隐藏），-->
+        <!--"showForward"：前进按钮（T——显示，F——隐藏），-->
+        <!--"showBottom"：整个底部栏（T——显示，F——隐藏）-->
+        { "showRefresh" : "F", "showBack" : "F", "showForward" : "F", "showBottom" : "F" }
+    </textarea>
+</div>

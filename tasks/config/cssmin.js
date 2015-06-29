@@ -11,16 +11,6 @@ module.exports = function (grunt) {
 				ascii_only: true
 			}
 		},
-		//main: {
-		//    src : ['temp/app.css',
-		//        //'<%= dom_munger.data.appcss %>',
-		//        'src/styles/pages/tumblr-list/css/*.css',
-		//        'src/styles/*.css'
-		//
-		//    ],
-		//    dest: 'dist/app.full.min.css'
-		//},
-
 		//main
 		main: {
 		    src : [
@@ -28,16 +18,9 @@ module.exports = function (grunt) {
 
 		    ],
 		    dest: 'dist/src/styles/common.min.css'
-		},
-
-
-		share: {
-			src : [
-				'share/partial/**/*.css',
-				'share/src/**/*.css'
-			],
-			dest: 'dist/share/src/css/app.full.min.css'
 		}
+
+
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');

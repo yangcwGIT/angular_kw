@@ -3,6 +3,7 @@
         transform: translateY(100px);
         margin-top: 0
     }
+
     .cut {
         margin-top: -200px
     }
@@ -52,17 +53,38 @@
             </div>
         </div>
     </section>-->
+    <section class="kw_dataBox imgs" ng-show="Datas.gotNum>0">
+        <a ng-href="{{Datas.urlTo}}">
+            <div class="content clearfix">
+                <div class="spinfo-box">
+                    <img ng-src="{{icons}}" ng-repeat="icons in Datas.cIcons">
+
+                    <p>已收到 {{Datas.gotNum}} 次打赏</p>
+                </div>
+            </div>
+        </a>
+    </section>
+    <section class="kw_dataBox imgs" ng-show="Datas.gotNum<1">
+        <a ng-href="{{Datas.urlTo}}">
+            <div class="content clearfix">
+                <div class="spinfo-box">
+                    <p style="color: #999;">Ta暂时没有收到打赏</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
 </div>
 <div class="container mb_fixed clearfix" id="J_conFixed">
     <section class="kw_tabbox">
         <!--tabs btns-->
-        <!--专家-->
+        <!--智客-->
         <div class="tabs" ng-show="Datas.isproReturn">
             <a href="javascript:void(0);" hidefocus="true" id="tumblr" class="active">个人介绍</a>
             <a href="javascript:void(0);" hidefocus="true">评价</a>
             <a href="javascript:void(0);" hidefocus="true">动态</a>
         </div>
-        <!--非专家-->
+        <!--非智客-->
         <div class="tabs" ng-hide="Datas.isproReturn">
             <a href="javascript:void(0);" hidefocus="true" class="active">动态</a>
         </div>
@@ -80,6 +102,7 @@
                                     {{po.po_content}}
                                     <br/>
                                 </p>
+
                                 <div class="b3_bottom fr">
                                     <div class="fl">
                                         <div class="i_zan fl"></div>
@@ -99,6 +122,7 @@
                         <!--//有动态-->
                         <div class="kw_noData" ng-show="Datas.poList.length==0">
                             <img src="http://ad-ikaowo.qiniudn.com/no_dynamic.png"/>
+
                             <p>没有动态</p>
                         </div>
                         <!--//无动态-->
@@ -118,8 +142,17 @@
                                   ng-repeat="tag in Datas.tags"
                                     >{{tag}}</span>
                         </p>
+
+                        <div class="midd-box">
+                            <div class="b1_title">服务单价</div>
+
+                            <p>
+                                <span>图文咨询：{{Datas.alPrice|currency : '￥'}} / 次</span><br/>
+                                <span>电话咨询：{{Datas.price|currency : '￥'}} / 分钟</span>
+                            </p>
+                        </div>
                         <div class="b1_title">个人简介</div>
-                        <div id="summary" ng-bind-html="Datas.userInfo.ui_summary">
+                        <div id="summary" ng-bind-html="Datas.rich_summary">
                         </div>
                         <div
                                 ng-repeat="video in Datas.mp4"
@@ -140,6 +173,7 @@
                             <img
                                     ng-src="{{tbr.tbr_img}}"
                                     />
+
                             <p>
                                 {{tbr.tbr_txt}}
                             </p>
@@ -166,6 +200,7 @@
                         <!--//有动态-->
                         <div id="J_no_commonts" class="kw_noData" ng-show="Datas.cmmtList.length==0">
                             <img src="http://ad-ikaowo.qiniudn.com/no_commonts.png"/>
+
                             <p>没有评论</p>
                         </div>
                         <!--//无动态-->
@@ -183,6 +218,7 @@
                                     {{po.po_content}}
                                     <br/>
                                 </p>
+
                                 <div class="b3_bottom fr">
                                     <div class="fl">
                                         <div class="i_zan fl"></div>
@@ -202,6 +238,7 @@
                         <!--//有动态-->
                         <div id="J_no_dynamic" class="kw_noData" ng-show="Datas.poList.length==0">
                             <img src="http://ad-ikaowo.qiniudn.com/no_dynamic.png"/>
+
                             <p>没有动态</p>
                         </div>
                         <!--//无动态-->
@@ -216,9 +253,10 @@
     <div class="kw_downBg"></div>
     <div class="kw_downBox">
         <a href="javascript:void(0);" class="i_close" id="J_closeBtn"></a>
+
         <div class="content clearfix">
             <div class="logo fl">
-                <img src="share/src/images/kaowo_icon.png"/>
+                <img src="share/partial/mine-partial/images/kaowo_icon.png"/>
             </div>
             <div class="font fl">
                 来「靠我」

@@ -1,0 +1,24 @@
+<div id="main">
+    <section class="reward-top">
+        <img class="list-img" ng-repeat="img in Datas.imgs" ng-src="{{img}}" alt="">
+        <p class="num">{{Datas.gotNums}}</p>
+    </section>
+    <section class="reward-list">
+        <div class="box clearfix" ng-repeat="clientS in Datas.clList">
+            <img class="men-logo fl" ng-src="{{clientS.client_icon}}" />
+            <div class="img-right fr">
+                <p class="name">{{clientS.client_nickname}}赏了他<span class="fr">{{clientS.tip_price}}元</span></p>
+                <p class="time">{{clientS.createdAt}}</p>
+                <p class="font">{{clientS.tip_content}}</p>
+            </div>
+
+        </div>
+    </section>
+    <textarea style="display:none" id="J_pageData">
+        <!--"showRefresh"：刷新按钮（T——显示，F——隐藏），-->
+        <!--"showBack"：后退按钮（T——显示，F——隐藏），-->
+        <!--"showForward"：前进按钮（T——显示，F——隐藏），-->
+        <!--"showBottom"：整个底部栏（T——显示，F——隐藏）-->
+        { "showRefresh" : "F", "showBack" : "F", "showForward" : "F", "showBottom" : "F" }
+    </textarea>
+</div>

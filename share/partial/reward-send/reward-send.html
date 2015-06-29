@@ -1,0 +1,47 @@
+<div id="main">
+    <section class="reward-top">
+        <img ng-repeat="img in Datas.imgs" ng-src="{{img}}" alt="">
+        <div class="portrait">
+            <div class="img-box" id="J_headerImg">
+                <img id="J_headerImgs" ng-src="{{Datas.iconsOb}}"/>
+            </div>
+            <p>{{Datas.topfonts}}</p>
+        </div>
+    </section>
+    <section class="reward-list">
+        <div class="money-num">
+            {{Datas.tipPrice}}元
+        </div>
+        <div class="money-bottom">
+            {{Datas.tipContent}}
+        </div>
+        <a class="long-btn btn-ok" ng-href="kaowo://open-to-share?title={{title_share}}&description={{content}}&img={{Datas.iconsOb}}&tipTyp={{Datas.tipTyp}}&tipId={{Datas.tipId}}" ng-show='showShare'>分享一下</a>
+    </section>
+    <textarea style="display:none" id="J_pageData">
+        <!--"showRefresh"：刷新按钮（T——显示，F——隐藏），-->
+        <!--"showBack"：后退按钮（T——显示，F——隐藏），-->
+        <!--"showForward"：前进按钮（T——显示，F——隐藏），-->
+        <!--"showBottom"：整个底部栏（T——显示，F——隐藏）-->
+        { "showRefresh" : "F", "showBack" : "F", "showForward" : "F", "showBottom" : "F" }
+    </textarea>
+</div>
+<section class="kw_fixed" ng-hide='showFiex'>
+    <div class="kw_downBg"></div>
+    <div class="kw_downBox">
+        <a href="javascript:void(0)" ng-click="Btns.hideFiex()" class="i_close">X</a>
+
+        <div class="content clearfix">
+            <div class="logo fl">
+                <img src="share/partial/mine-partial/images/kaowo_icon.png">
+            </div>
+            <div class="font fl">
+                「靠我」
+                <br>&nbsp;您的专属智囊团
+            </div>
+            <a class="btn fr" ng-click="Btns.schema()">
+                <div class="icon fl"></div>
+                马上使用
+            </a>
+        </div>
+    </div>
+</section>

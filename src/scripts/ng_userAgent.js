@@ -23,25 +23,43 @@ angular.module('kaowoApp').factory('userAgent', ['$resource', '$location', funct
 				var _obj = eval('(' + _val + ')');
 				//console.log(_obj);
 				//console.log(_obj.showRefresh);
-				if (_obj.showRefresh === "T") {
-					webViewControl.showRefresh(true);
-				} else {
-					webViewControl.showRefresh(false);
-				}
-				if (_obj.showBack === "T") {
-					webViewControl.showBack(true);
-				} else {
-					showForward.showBack(false);
-				}
-				if (_obj.showForward === "T") {
-					webViewControl.showForward(true);
-				} else {
-					webViewControl.showForward(false);
-				}
-				if (_obj.showBottom === "T") {
+				//if (_obj.showRefresh === "T") {
+				//	webViewControl.showRefresh(true);
+				//} else {
+				//	webViewControl.showRefresh(false);
+				//}
+				//if (_obj.showBack === "T") {
+				//	webViewControl.showBack(true);
+				//} else {
+				//	showForward.showBack(false);
+				//}
+				//if (_obj.showForward === "T") {
+				//	webViewControl.showForward(true);
+				//} else {
+				//	webViewControl.showForward(false);
+				//}
+				//if (_obj.showBottom === "T") {
+				//	webViewControl.showBottom(true);
+				//} else {
+				//	webViewControl.showBottom(false);
+				//}
+				if (_obj.showBottom == "T") {
 					webViewControl.showBottom(true);
-				} else {
+					if (_obj.showRefresh == "T") {
+						webViewControl.showRefresh(true);
+					}
+					if (_obj.showForward == "T") {
+						webViewControl.showForward(true);
+					}
+					if (_obj.showBack == "T") {
+						webViewControl.showBack(true);
+					}
+				}
+				else{
 					webViewControl.showBottom(false);
+					webViewControl.showRefresh(false);
+					webViewControl.showForward(false);
+					webViewControl.showBack(false);
 				}
 			}
 		}

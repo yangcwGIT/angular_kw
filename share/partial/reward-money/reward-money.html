@@ -1,0 +1,53 @@
+<div id="main">
+    <section class="reward-top">
+        <div class="pos_top" ng-show="toShowtips">单次打赏金额为{{Datas.minNum}}-{{Datas.maxNum}}元</div>
+        <img ng-repeat="img in Datas.imgs" ng-src="{{img}}" alt="">
+
+        <div class="portrait">
+            <div class="img-box" id="J_headerImg">
+                <img id="J_headerImgs" ng-src="{{Datas.iconOb}}"/>
+            </div>
+
+            <p>您将成为第 {{Datas.pro_got_num}} 次打赏Ta的人</p>
+        </div>
+    </section>
+    <section class="reward-list">
+
+        <div class="mid-btns" ng-show="Datas.showMoreNum">
+            <button class="un-btn" ng-repeat="nums in Datas.moneyNums"
+                    ng-class="cls.mid.children[nums == Datas.chosenNum]" ng-click="moneyNum(nums)">{{nums}}元
+            </button>
+        </div>
+        <div class="money-num more" ng-click="closeForm()" ng-hide="Datas.showMoreNum">
+            {{Datas.otherMoneyShow}}元
+        </div>
+        <p class="othe-link clear"><a href="javascript:void(0)" ng-click="showForm()">其他金额</a></p>
+        <input type="text" class="long-input" placeholder="{{Datas.placeholder}}" ng-model="Datas.lastFonts" maxlength="{{Datas.maxLenght}}"/>
+        <button class="long-btn" id="J_long-btn" ng-click="toReward()" ng-disabled="toRewardBtn">打赏一下</button>
+    </section>
+
+
+    <section id="alert_win" class="art-box" ng-show="showform">
+        <a href="javascript:;" ng-click="showFormAll()">
+            <div id="mask" class="bg-art"></div>
+        </a>
+
+        <div class=beian_winBG id=beian_popup><!--弹出框-->
+            <div id="divOneStep" class="form-box">
+                <div class="top">其他金额</div>
+                <div class="form">
+                    <input class="input" id="J_otherNum" type="tel" placeholder="金额" ng-model="Datas.otherMoney"/>
+                    <button class="btn" ng-click="closeForm()" ng-disabled="toRewardBtn" id="J_other-btn">确定</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <textarea style="display:none" id="J_pageData">
+        <!--"showRefresh"：刷新按钮（T——显示，F——隐藏），-->
+        <!--"showBack"：后退按钮（T——显示，F——隐藏），-->
+        <!--"showForward"：前进按钮（T——显示，F——隐藏），-->
+        <!--"showBottom"：整个底部栏（T——显示，F——隐藏）-->
+        { "showRefresh" : "F", "showBack" : "F", "showForward" : "F", "showBottom" : "F" }
+    </textarea>
+</div>

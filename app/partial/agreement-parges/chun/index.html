@@ -1,0 +1,171 @@
+<!--<meta name='viewport' content='width=640,user-scalable=no'/>-->
+<div style="display: none">
+    <img src="app/partial/agreement-parges/img/share_icon.png"/>
+</div>
+<section id="J_page1">
+    <div id="container">
+        <!-- 铃声 -->
+        <audio id="k_ring" preload="load" loop="loop" autoplay="autoplay">
+            <source src="app/partial/agreement-parges/media/ring.mp3"/>
+            <source src="app/partial/agreement-parges/media/ring.wav"/>
+            <source src="app/partial/agreement-parges/media/ring.ogg"/>
+        </audio>
+        <!-- 语音 -->
+        <audio id="k_audio" preload="load">
+            <source src="app/partial/agreement-parges/chun/media/k_audio.mp3"/>
+            <source src="app/partial/agreement-parges/chun/media/k_audio.wav"/>
+            <source src="app/partial/agreement-parges/chun/media/k_audio.ogg"/>
+        </audio>
+        <audio id="k_msg" preload="load">
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.mp3"/>
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.wav"/>
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.ogg"/>
+        </audio>
+        <audio id="k_msg2" preload="load">
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.mp3"/>
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.wav"/>
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.ogg"/>
+        </audio>
+        <audio id="k_msg3" preload="load">
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.mp3"/>
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.wav"/>
+            <source type="audio/mpeg" src="app/partial/agreement-parges/media/msg.ogg"/>
+        </audio>
+        <div class="top">
+            <img class="tonghua" src="app/partial/agreement-parges/img/tonghua.png"/>
+
+            <div class="touxiang_circle">
+            </div>
+            <div class="tonghua_dumiao">
+                <div class="second">00:00</div>
+                <canvas class="canvas" id="canvas_1" style="opacity:.3;"></canvas>
+                <canvas class="canvas" id="canvas_2"></canvas>
+            </div>
+            <img class="touxiang" src="app/partial/agreement-parges/chun/img/k_touxiang.png"/>
+            <img class="address" src="app/partial/agreement-parges/chun/img/k_mingzi.png"/>
+        </div>
+
+        <div class="jieting">
+            <div class="jieting_btn">
+                <div class="btn_inner"></div>
+            </div>
+            <img src="app/partial/agreement-parges/img/k_jieting.png" />
+        </div>
+
+        <div class="keybord">
+            <div class="hungUp_btn">
+                <img class="btn" src="app/partial/agreement-parges/img/icon_hungUp.png" />
+            </div>
+            <img class="bg" src="app/partial/agreement-parges/img/k_keybord.png" />
+        </div>
+
+        <div class="message">
+            <img class="msg_01" src="app/partial/agreement-parges/chun/img/k_msg01.png"/>
+            <img class="msg_02" src="app/partial/agreement-parges/chun/img/k_msg02.png"/>
+            <img class="msg_03" src="app/partial/agreement-parges/chun/img/k_msg03.png"/>
+            <img class="msg_bg" src="app/partial/agreement-parges/img/k_msg_bot.jpg"/>
+        </div>
+    </div>
+</section>
+<div id="J_page2" style="display: none">
+    <a href="javascript:void(0)" id="J_music" class="music-btn"></a>
+
+    <div id="dowebok">
+        <div class="section section1" data-menuanchor="page1" data-anchor="page1" ng-style="sty.page1"
+             style="background: #eee">
+            <section class="more-btn">
+                <img ng-src="{{imgs.more}}">
+            </section>
+            <section class="page1">
+                <img class="j_text" ng-src="{{imgs.bg1_text}}"/>
+            </section>
+            <div class="p1-bg">
+                <img class="bg" ng-src="{{imgs.bg1}}" imageonload show-breath="sty"/>
+            </div>
+        </div>
+        <div class="section section2" data-anchor="page2" style="background: #f3836d">
+            <section class="more-btn">
+                <img ng-src="{{imgs.more}}">
+            </section>
+            <section class="page2">
+                <img class="p2_1" ng-src="{{imgs.p2_1}}"/>
+                <img class="p2_2" ng-src="{{imgs.p2_2}}"/>
+            </section>
+
+        </div>
+        <div class="section section3" data-anchor="page3" style="background: #1c1b21">
+            <section class="more-btn">
+                <img ng-src="{{imgs.more}}">
+            </section>
+            <section class="page3">
+                <img class="p3_1" ng-src="{{imgs.p3_1_1}}"/>
+                <div class="p3_2">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/argument-p3-image01.jpg?imageMogr2/thumbnail/828"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/argument-p3-image02.jpg?imageMogr2/thumbnail/828/"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/argument-p3-image03.jpg?imageMogr2/thumbnail/828"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/argument-p3-image04.jpg?imageMogr2/thumbnail/828/"/>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/argument-p3-image05.png?imageMogr2/thumbnail/828"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+
+                <img class="p3_3" ng-src="{{imgs.p3_3}}"/>
+            </section>
+
+        </div>
+        <div class="section section4" data-anchor="page4" style="background: #5c72c8">
+            <section class="more-btn">
+                <img ng-src="{{imgs.more}}">
+            </section>
+            <section class="page3 page4">
+                <img class="p4_1" ng-src="{{imgs.p4_1}}"/>
+            </section>
+
+        </div>
+        <div class="section section5" data-anchor="page5" style="background: #fff">
+            <section class="page3 page5">
+                <img class="p5_1" ng-src="{{imgs.p5_1}}"/>
+                <img class="p2" ng-src="{{imgs.p5_2}}"/>
+            </section>
+            <section class="kw_fixed" id="J_kw_fixed">
+
+                <div class="kw_downBg"></div>
+                <div class="kw_downBox">
+                    <a href="javascript:void(0)" id="J_closeFixed" class="i_close">X</a>
+
+                    <div class="content clearfix">
+                        <div class="logo fl">
+                            <img src="share/partial/mine-partial/images/kaowo_icon.png">
+                        </div>
+                        <div class="font fl">
+                            「靠我」
+                            <br>&nbsp;您的专属智囊团
+                        </div>
+                        <a class="btn fr" id="J_go_download" target="_blank" ng-href="/h5/retina.html#/go-download?{{Static.userId}}">
+                            <div class="icon fl"></div>
+                            马上连线
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<audio id="music">
+    <source src="app/partial/agreement-parges/chun/media/music.ogg">
+    <source src="app/partial/agreement-parges/chun/media/music.mp3">
+    <source src="app/partial/agreement-parges/chun/media/music.wav">
+</audio>

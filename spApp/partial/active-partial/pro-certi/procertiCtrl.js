@@ -32,7 +32,7 @@ angular.module('spApp')
 			oSummary    : []
 		};
 		spService.certiDate.get({}, function (data) {
-			$scope.Datas.ttl = '待认证的“准专家”们...';
+			$scope.Datas.ttl = '待认证的“准智客”们...';
 			var iconWidht = parseInt(Number(lwtDiv.offsetWidth) * (0.197));
 			iconWidht < 80 ? iconWidht = 70 : '';
 			_.forEach(data.pros, function (value, index) {

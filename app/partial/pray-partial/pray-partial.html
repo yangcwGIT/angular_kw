@@ -1,0 +1,85 @@
+<a href="javascript:void(0)" ng-click="playMusic()" id="J_music" class="music-btn"></a>
+<div id="dowebok">
+
+
+    <div class="section" data-menuanchor="page1" data-anchor="page1" ng-style="sty.page1" style="">
+        <div class="more-btn">
+            <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-prat_more.png">
+        </div>
+
+        <div class="show" id="J_onepage1">
+            <div class="bg"></div>
+            <a href="javascript:void(0)" ng-click="showPage1()" class="lazhu">
+                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-prat_la_01.png"/>
+            </a>
+        </div>
+        <a href="javascript:void(0)" class="lazhu hide" id="J_onepage2">
+            <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-prat_la_02.png"/>
+        </a>
+        <div class="num-box">已点亮 {{reNum}} 根蜡烛</div>
+        <img ng-src="{{imgbgs.page1}}" imageonload show-breath="sty"/>
+    </div>
+    <div class="section" data-anchor="page2">
+        <div class="to-share">
+            <a href="javascript:void(0)" ng-click="showPage()" class="btn">
+                <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-prat_btn.png"/>
+            </a>
+        </div>
+        <div class="show" ng-hide="static.showPage">
+            <div class="bg"></div>
+            <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-prat_03.png"/>
+        </div>
+        <div class="logo">
+            <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-LOGO.png"/>
+        </div>
+        <div class="rollGallery">
+            <div class="scrollbox">
+                <ul id="toplist">
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb1_01.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb1_02.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb1_03.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb1_04.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb2_01.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb2_02.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb2_03.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb2_04.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb03_01.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb03_02.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb03_03.png"/>
+                    </li>
+                    <li>
+                        <img src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-wb03_04.png"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <img ng-src="{{imgbgs.page2}}">
+    </div>
+    <audio id="music" autoplay>
+        <source src="http://7xaw9f.com2.z0.glb.qiniucdn.com/pray-music.mp3" type="audio/mp3">
+    </audio>
+</div>
+

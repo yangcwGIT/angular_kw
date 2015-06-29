@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%
+	font-size: 62.5%
 }
 
 @fontStyle: "Segoe UI",
@@ -15,391 +15,432 @@ Arimo,
 "Hiragino Sans GB W3",
 FontVsoicon,
 sans-serif;
-  header, section {
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
+header, section {
+	img {
+		display: block;
+		width: 100%;
+	}
+}
 
 @btnIcon: url("http://7xixti.com2.z0.glb.qiniucdn.com/btn_icon.png?imageView2/2/w/40");
 
 @bcColor: #fff;
 
 #actPages {
-  @homeBtn: #a7a47b;
-  @askBtn: #ff8c1d;
-  .container {
-    display: block;
-    width: 100%;
-  }
-  section {
-    .con_box {
-      width: 100%;
-      position: relative;
-      .bottom_box {
-        position: absolute;
-        right: 7%;
-        bottom: 30px;
-        width: 69%;
-        .btn {
-          width: 45%;
-          height: 50px;
-          line-height: 50px;
-          color: #fff;
-          text-align: center;
-          display: block;
-          font-size: 2rem;
-          font-family: @fontStyle;
-          text-decoration: none;
-          cursor: pointer;
-          &.left_btn {
-            background: @homeBtn;
-          }
-          &.right_btn {
-            background: @askBtn @btnIcon no-repeat;
-            background-size: 32px auto;
-            background-position: 12% 8px;
-            padding-left: 5%;
-            width: 40%;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 520px) {
-    section {
-      .con_box {
-        .bottom_box {
-          bottom: 20px;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 480px) {
-    section {
-      .con_box {
-        .bottom_box {
-          right: 7%;
-          bottom: 20px;
-          width: 69%;
-          .btn {
-            width: 45%;
-            height: 40px;
-            line-height: 40px;
-            font-size: 1.8rem;
-            &.right_btn {
-              background-size: 25px auto;
-              background-position: 12% 7px;
-              padding-left: 5%;
-              width: 40%;
-            }
-          }
-        }
-      }
-    }
+	@homeBtn: #a7a47b;
+	@askBtn: #ff8c1d;
+	.container {
+		display: block;
+		width: 100%;
+	}
+	section {
+		.con_box {
+			width: 100%;
+			position: relative;
+			.bottom_box {
+				position: absolute;
+				right: 7%;
+				bottom: 30px;
+				width: 69%;
+				.btn {
+					width: 45%;
+					height: 50px;
+					line-height: 50px;
+					color: #fff;
+					text-align: center;
+					display: block;
+					font-size: 2rem;
+					font-family: @fontStyle;
+					text-decoration: none;
+					cursor: pointer;
+					&.left_btn {
+						background: @homeBtn;
+					}
+					&.right_btn {
+						background: @askBtn @btnIcon no-repeat;
+						background-size: 32px auto;
+						background-position: 12% 8px;
+						padding-left: 5%;
+						width: 40%;
+					}
+				}
+			}
 
-  }
-  @media screen and (max-width: 414px) {
-    section {
-      .con_box {
-        .bottom_box {
-          right: 7%;
-          bottom: 20px;
-          width: 69%;
-          .btn {
-            width: 48%;
-            height: 38px;
-            line-height: 38px;
-            font-size: 1.6rem;
-            &.right_btn {
-              background-size: 25px auto;
-              background-position: 12% 7px;
-              padding-left: 5%;
-              width: 40%;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 375px) {
-    section {
-      .con_box {
-        .bottom_box {
-          right: 7%;
-          bottom: 15px;
-          width: 69%;
-          .btn {
-            width: 49%;
-            height: 38px;
-            line-height: 38px;
-            font-size: 1.4rem;
-            &.right_btn {
-              background-size: 20px auto;
-              background-position: 12% 8px;
-              padding-left: 5%;
-              width: 40%;
-            }
-          }
-        }
-      }
-    }
+			&.bigSales {
+				.sales-btns {
+					position: absolute;
+					right: 0;
+					margin-top: -40px;
+					width: 64%;
+					height: 40px;
+					.btn{
+						display: block;
+						width: 38%;
+						height: 40px;
+						margin-right: 7%;
+						float: left;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 520px) {
+		section {
+			.con_box {
+				.bottom_box {
+					bottom: 20px;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 480px) {
+		section {
+			.con_box {
+				.bottom_box {
+					right: 7%;
+					bottom: 20px;
+					width: 69%;
+					.btn {
+						width: 45%;
+						height: 40px;
+						line-height: 40px;
+						font-size: 1.8rem;
+						&.right_btn {
+							background-size: 25px auto;
+							background-position: 12% 7px;
+							padding-left: 5%;
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
 
-  }
-  @media screen and (max-width: 320px) {
-    section {
-      .con_box {
-        .bottom_box {
-          right: 7%;
-          bottom: 15px;
-          width: 69%;
-          .btn {
-            width: 44%;
-            height: 30px;
-            line-height: 30px;
-            font-size: 1.2rem;
-            &.right_btn {
-              background-position: 12% 5px;
-              padding-left: 5%;
-              width: 45%;
-            }
-          }
-        }
-      }
-    }
+	}
+	@media screen and (max-width: 414px) {
+		section {
+			.con_box {
+				.bottom_box {
+					right: 7%;
+					bottom: 20px;
+					width: 69%;
+					.btn {
+						width: 48%;
+						height: 38px;
+						line-height: 38px;
+						font-size: 1.6rem;
+						&.right_btn {
+							background-size: 25px auto;
+							background-position: 12% 7px;
+							padding-left: 5%;
+							width: 40%;
+						}
+					}
+				}
+				&.bigSales {
+					.sales-btns {
+						margin-top: -30px;
+						width: 64%;
+						height: 30px;
+						.btn{
+							width: 38%;
+							height: 30px;
+							margin-right: 7%;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 375px) {
+		section {
+			.con_box {
+				.bottom_box {
+					right: 7%;
+					bottom: 15px;
+					width: 69%;
+					.btn {
+						width: 49%;
+						height: 38px;
+						line-height: 38px;
+						font-size: 1.4rem;
+						&.right_btn {
+							background-size: 20px auto;
+							background-position: 12% 8px;
+							padding-left: 5%;
+							width: 40%;
+						}
+					}
+				}
+			}
+		}
 
-  }
+	}
+	@media screen and (max-width: 320px) {
+		section {
+			.con_box {
+				.bottom_box {
+					right: 7%;
+					bottom: 15px;
+					width: 69%;
+					.btn {
+						width: 44%;
+						height: 30px;
+						line-height: 30px;
+						font-size: 1.2rem;
+						&.right_btn {
+							background-position: 12% 5px;
+							padding-left: 5%;
+							width: 45%;
+						}
+					}
+				}
+				&.bigSales {
+					.sales-btns {
+						margin-top: -24px;
+						width: 64%;
+						height: 25px;
+						.btn{
+							width: 38%;
+							height: 25px;
+							margin-right: 7%;
+						}
+					}
+				}
+			}
+		}
+
+	}
 
 }
 
 #hotRanking {
-  @colorGary: #e6e6e6;
-  @colorFont: #797979;
-  @homeBtn: #2c4375;
-  @askBtn: #db283d;
-  .container {
-    display: block;
-    width: 100%;
-  }
-  .midd_img {
-    margin: 50px auto 0;
-  }
-  .con_box {
-    border: 5px solid @colorGary;
-    margin: 0 10px 10px;
-    padding: 10px 10px 15px;
-    .first_b {
-      border-bottom: 1px solid @colorGary;
-      padding-bottom: 10px;
-    }
-    .sidebar {
-      background: @colorGary;
-      color: @colorFont;
-      padding: 12px;
-      font-size: 2.2rem;
-      margin-bottom: 3px;
-      &.btn_long {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        padding: 14px;
-      }
+	@colorGary: #e6e6e6;
+	@colorFont: #797979;
+	@homeBtn: #2c4375;
+	@askBtn: #db283d;
+	.container {
+		display: block;
+		width: 100%;
+	}
+	.midd_img {
+		margin: 50px auto 0;
+	}
+	.con_box {
+		border: 5px solid @colorGary;
+		margin: 0 10px 10px;
+		padding: 10px 10px 15px;
+		.first_b {
+			border-bottom: 1px solid @colorGary;
+			padding-bottom: 10px;
+		}
+		.sidebar {
+			background: @colorGary;
+			color: @colorFont;
+			padding: 12px;
+			font-size: 2.2rem;
+			margin-bottom: 3px;
+			&.btn_long {
+				display: block;
+				text-align: center;
+				text-decoration: none;
+				padding: 14px;
+			}
 
-    }
-    .intro_box {
-      padding: 20px 0 8px;
-    }
-    .btn_box {
-      width: 95%;
-      margin: 10px auto 0;
+		}
+		.intro_box {
+			padding: 20px 0 8px;
+		}
+		.btn_box {
+			width: 95%;
+			margin: 10px auto 0;
 
-      .btn {
-        width: 45%;
-        height: 50px;
-        line-height: 50px;
-        color: #fff;
-        text-align: center;
-        display: block;
-        font-size: 2rem;
-        font-family: @fontStyle;
-        text-decoration: none;
-        cursor: pointer;
-        &.left_btn {
-          background: @homeBtn;
-        }
-        &.right_btn {
-          background: @askBtn @btnIcon no-repeat;
-          background-size: 32px auto;
-          background-position: 12% 8px;
-          padding-left: 5%;
-          width: 40%;
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .midd_img {
-      margin: 40px auto 0;
-    }
+			.btn {
+				width: 45%;
+				height: 50px;
+				line-height: 50px;
+				color: #fff;
+				text-align: center;
+				display: block;
+				font-size: 2rem;
+				font-family: @fontStyle;
+				text-decoration: none;
+				cursor: pointer;
+				&.left_btn {
+					background: @homeBtn;
+				}
+				&.right_btn {
+					background: @askBtn @btnIcon no-repeat;
+					background-size: 32px auto;
+					background-position: 12% 8px;
+					padding-left: 5%;
+					width: 40%;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 480px) {
+		.midd_img {
+			margin: 40px auto 0;
+		}
 
-    .con_box {
-      border: 5px solid @colorGary;
-      margin: 0 10px 10px;
-      padding: 10px 10px 15px;
-      .first_b {
-        padding-bottom: 10px;
-      }
-      .sidebar {
-        padding: 10px;
-        font-size: 2rem;
-        margin-bottom: 3px;
-        &.btn_long {
-          padding: 12px;
-        }
+		.con_box {
+			border: 5px solid @colorGary;
+			margin: 0 10px 10px;
+			padding: 10px 10px 15px;
+			.first_b {
+				padding-bottom: 10px;
+			}
+			.sidebar {
+				padding: 10px;
+				font-size: 2rem;
+				margin-bottom: 3px;
+				&.btn_long {
+					padding: 12px;
+				}
 
-      }
-      .intro_box {
-        padding: 20px 0 8px;
-      }
-      .btn_box {
-        margin: 10px auto 0;
-        .btn {
-          width: 48%;
-          height: 40px;
-          line-height: 40px;
-          font-size: 1.8rem;
-          &.right_btn {
-            background-size: 25px auto;
-            background-position: 12% 6px;
-            padding-left: 5%;
-            width: 43%;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 414px) {
-    .midd_img {
-      margin: 30px auto 0;
-    }
+			}
+			.intro_box {
+				padding: 20px 0 8px;
+			}
+			.btn_box {
+				margin: 10px auto 0;
+				.btn {
+					width: 48%;
+					height: 40px;
+					line-height: 40px;
+					font-size: 1.8rem;
+					&.right_btn {
+						background-size: 25px auto;
+						background-position: 12% 6px;
+						padding-left: 5%;
+						width: 43%;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 414px) {
+		.midd_img {
+			margin: 30px auto 0;
+		}
 
-    .con_box {
-      border: 3px solid @colorGary;
-      margin: 0 8px 8px;
-      padding: 8px 8px 12px;
-      .first_b {
-        padding-bottom: 8px;
-      }
-      .sidebar {
-        padding: 8px 10px;
-        font-size: 1.6rem;
-        margin-bottom: 3px;
-        &.btn_long {
-          padding: 10px;
-        }
+		.con_box {
+			border: 3px solid @colorGary;
+			margin: 0 8px 8px;
+			padding: 8px 8px 12px;
+			.first_b {
+				padding-bottom: 8px;
+			}
+			.sidebar {
+				padding: 8px 10px;
+				font-size: 1.6rem;
+				margin-bottom: 3px;
+				&.btn_long {
+					padding: 10px;
+				}
 
-      }
-      .intro_box {
-        padding: 18px 6px 13px;
-      }
-      .btn_box {
-        margin: 8px auto 0;
-        .btn {
-          width: 48%;
-          height: 35px;
-          line-height: 37px;
-          font-size: 1.6rem;
-          &.right_btn {
-            background-size: 20px auto;
-            background-position: 12% 6px;
-            padding-left: 5%;
-            width: 43%;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 375px) {
-    .midd_img {
-      margin: 20px auto 0;
-    }
+			}
+			.intro_box {
+				padding: 18px 6px 13px;
+			}
+			.btn_box {
+				margin: 8px auto 0;
+				.btn {
+					width: 48%;
+					height: 35px;
+					line-height: 37px;
+					font-size: 1.6rem;
+					&.right_btn {
+						background-size: 20px auto;
+						background-position: 12% 6px;
+						padding-left: 5%;
+						width: 43%;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 375px) {
+		.midd_img {
+			margin: 20px auto 0;
+		}
 
-    .con_box {
-      border: 3px solid @colorGary;
-      margin: 0 8px 8px;
-      padding: 8px 8px 12px;
-      .first_b {
-        padding-bottom: 8px;
-      }
-      .sidebar {
-        padding: 8px 10px;
-        font-size: 1.4rem;
-        margin-bottom: 3px;
-        &.btn_long {
-          padding: 10px;
-        }
+		.con_box {
+			border: 3px solid @colorGary;
+			margin: 0 8px 8px;
+			padding: 8px 8px 12px;
+			.first_b {
+				padding-bottom: 8px;
+			}
+			.sidebar {
+				padding: 8px 10px;
+				font-size: 1.4rem;
+				margin-bottom: 3px;
+				&.btn_long {
+					padding: 10px;
+				}
 
-      }
-      .intro_box {
-        padding: 18px 6px 13px;
-      }
-      .btn_box {
-        margin: 8px auto 0;
-        .btn {
-          width: 48%;
-          height: 35px;
-          line-height: 37px;
-          font-size: 1.4rem;
-          &.right_btn {
-            background-size: 20px auto;
-            background-position: 12% 8px;
-            padding-left: 5%;
-            width: 43%;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 320px) {
-    .midd_img {
-      margin: 15px auto 0;
-    }
+			}
+			.intro_box {
+				padding: 18px 6px 13px;
+			}
+			.btn_box {
+				margin: 8px auto 0;
+				.btn {
+					width: 48%;
+					height: 35px;
+					line-height: 37px;
+					font-size: 1.4rem;
+					&.right_btn {
+						background-size: 20px auto;
+						background-position: 12% 8px;
+						padding-left: 5%;
+						width: 43%;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 320px) {
+		.midd_img {
+			margin: 15px auto 0;
+		}
 
-    .con_box {
-      border: 3px solid @colorGary;
-      margin: 0 6px 6px;
-      padding: 6px 6px 8px;
-      .first_b {
-        padding-bottom: 6px;
-      }
-      .sidebar {
-        padding: 6px 8px;
-        font-size: 1.2rem;
-        margin-bottom:2px;
-        &.btn_long {
-          padding: 8px;
-        }
+		.con_box {
+			border: 3px solid @colorGary;
+			margin: 0 6px 6px;
+			padding: 6px 6px 8px;
+			.first_b {
+				padding-bottom: 6px;
+			}
+			.sidebar {
+				padding: 6px 8px;
+				font-size: 1.2rem;
+				margin-bottom: 2px;
+				&.btn_long {
+					padding: 8px;
+				}
 
-      }
-      .intro_box {
-        padding: 10px 6px 8px;
-      }
-      .btn_box {
-        margin: 6px auto 0;
-        .btn {
-          width: 48%;
-          height: 25px;
-          line-height: 27px;
-          font-size: 1.2rem;
-          &.right_btn {
-            background-size: 17px auto;
-            background-position: 12% 4px;
-            padding-left: 5%;
-            width: 43%;
-          }
-        }
-      }
-    }
-  }
+			}
+			.intro_box {
+				padding: 10px 6px 8px;
+			}
+			.btn_box {
+				margin: 6px auto 0;
+				.btn {
+					width: 48%;
+					height: 25px;
+					line-height: 27px;
+					font-size: 1.2rem;
+					&.right_btn {
+						background-size: 17px auto;
+						background-position: 12% 4px;
+						padding-left: 5%;
+						width: 43%;
+					}
+				}
+			}
+		}
+	}
 }

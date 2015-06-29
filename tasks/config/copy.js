@@ -48,7 +48,11 @@ module.exports = function (grunt) {
                 //    expand : true
                 //},
                 {
-                    src   : ['app/less/**', 'app/partial/**', 'bower_components/fullpage.js/jquery.fullPage.css'],
+                    src   : ['favicon.ico'],
+                    dest  : 'dist/',
+                    fulter: 'isFile'
+                },                {
+                    src   : ['app/less/**', 'app/partial/**','!app/**/*.less','!app/partial/**/*.js', 'bower_components/fullpage.js/jquery.fullPage.css','404.html'],
                     dest  : 'dist/',
                     fulter: 'isFile'
                 },
@@ -109,7 +113,7 @@ module.exports = function (grunt) {
                     expand : true
                 },
                 {
-                    src:['share/src/images/**','share/partial/**/*.js','share/partial/**/*.map','share/**/*.coffee'],
+                    src:['share/partial/**/images/**','share/partial/**/*.js','share/services/*.js','share/partial/**/*.map','share/partial/**/*.css'],
                     dest: 'dist/', filter: 'isFile',
                     expand : true
                 }

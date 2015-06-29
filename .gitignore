@@ -8,11 +8,31 @@ app/**/**/*.css
 spApp/**/**/*.css
 spApp/**/**/**/*.css
 
-share/partial/mine-partial/mineCtrl.js
-share/partial/mine-partial/mineCtrl.js.map
-share/partial/mine-partial/mineCtrl.map
-share/partial/mine-partial/*.css
+share/partial/**/*.js
+share/partial/**/*.js.map
+share/partial/**/*.map
+share/partial/**/*.css
+
+share/**/*.js
+share/**/*.js.map
+share/**/*.map
+
+share/*.js
+share/*.map
+share/*.js.map
+
+!share/**/jqMineTab.js
+!share/**/reward.js
+
+staticApp/**/*.js
+staticApp/**/*.js.map
+staticApp/**/*.map
+
+staticApp/*.js
+staticApp/*.map
+staticApp/*.js.map
 
 dist/
+*.rar
 
 bower_components/

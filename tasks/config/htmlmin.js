@@ -17,7 +17,8 @@ module.exports = function (grunt) {
             options: options,
             files  : {
                 'dist/index.html' : 'dist/index.html',
-                'dist/retina.html': 'dist/retina.html'
+                'dist/retina.html': 'dist/retina.html',
+                'dist/404.html': 'dist/404.html'
             }
         },
         nghtml: {

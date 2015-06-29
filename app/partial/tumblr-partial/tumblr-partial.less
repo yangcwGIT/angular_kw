@@ -1,59 +1,105 @@
 #main {
-  a, img {
-    -webkit-touch-callout: none;
-  }
-  html, body {
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  .container {
-    background-color: #FFFFFF;
-    padding: 0px 14px;
-    color: #434343;
-    .field {
-      border-bottom: 1px solid #EFEFEF;
-      padding-bottom: 16px;
-      & > h2 {
-        font-size: 18px;
-        color: #767676;
-      }
-      & > .content {
-        font-size: 14px;
-      }
+    a, img {
+        -webkit-touch-callout: none;
     }
-    .field.end {
-      border-bottom: none;
+    html, body {
+        -webkit-user-select: none;
+        user-select: none;
     }
-    .content {
-      .text {
-        line-height: 22px;
-      }
-    }
-    .field.profession {
-      i.icon-tag {
-        font-family: "iconfont" !important;
-        font-size: 16px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      i.icon-tag:before {
-        content: "\e618";
-      }
-    }
-    .field.detail {
-      img {
-        width: 100%;
-      }
-      .summary {
-        margin-bottom: 33px;
-      }
-      .addition {
-        & > .row {
-          margin-bottom: 22px;
+    .container {
+        background-color: #FFFFFF;
+        padding: 0px 14px;
+        color: #434343;
+        .field {
+            border-bottom: 1px solid #EFEFEF;
+            padding-bottom: 16px;
+            & > h2 {
+                font-size: 18px;
+                color: #767676;
+            }
+            & > .content {
+                font-size: 14px;
+                word-wrap: break-word;
+            }
         }
-      }
+        .field.end {
+            border-bottom: none;
+        }
+        .content {
+            .text {
+                line-height: 22px;
+            }
+        }
+        .field.profession {
+            i.icon-tag {
+                font-family: "iconfont" !important;
+                font-size: 16px;
+                font-style: normal;
+                -webkit-font-smoothing: antialiased;
+                -webkit-text-stroke-width: 0.2px;
+                -moz-osx-font-smoothing: grayscale;
+
+            }
+            i.icon-tag:before {
+                content: "\e618";
+            }
+            .btn {
+                background: #41c0c2;
+                color: #fff;
+                padding: 5px 6px 6px;
+                font-size: 15px;
+                border: 0;
+                font-family:"Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", FontVsoicon, sans-serif;
+                border-radius: 4px;
+            }
+            .content{
+                .input_text{
+                    width: 70%;
+                    padding: 0 6px;
+                    border: 1px solid #eee;
+                    height: 33px;
+                    line-height: 32px;
+                }
+                .btn{
+                    width: 22%;
+                    padding: 6px 6px 7px;
+                    &.dis{
+                        background: #9ad9da;
+                    }
+                }
+                .bg{
+                    padding: 2px 5px;
+                    background: #41c0c2;
+                    color: #fff;
+                    margin-left: 5px;
+                    border-radius: 2px;
+                    font-size: 12px;
+                }
+            }
+            .code{
+                font-size: 15px;
+                padding-left: 5px;
+                color: #999;
+            }
+            .icon{
+                width: 31px;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .field.detail {
+            img {
+                width: 100%;
+            }
+            .summary {
+                margin-bottom: 33px;
+            }
+            .addition {
+                & > .row {
+                    margin-bottom: 22px;
+                }
+            }
+        }
     }
-  }
 }

@@ -81,30 +81,30 @@ sizes, pagination, etc.
 }
 .swiper-slide {
 	/* Specify Slides's Size: */
-	
+
 	/*width: 100%;
 	height: 100%;*/
 }
 .swiper-slide-active {
 	/* Specific active slide styling: */
-	
+
 }
 .swiper-slide-visible {
-	/* Specific visible slide styling: */	
+	/* Specific visible slide styling: */
 
 }
 /* ===============================================================
 Pagination Styles
 ================================================================*/
 .swiper-pagination-switch {
-	/* Stylize pagination button: */	
+	/* Stylize pagination button: */
 
 }
 .swiper-active-switch {
-	/* Specific active button style: */	
-	
+	/* Specific active button style: */
+
 }
 .swiper-visible-switch {
-	/* Specific visible button style: */	
-	
+	/* Specific visible button style: */
+
 }

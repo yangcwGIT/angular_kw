@@ -22,7 +22,8 @@
         userInfo: {},
         poList: [],
         cmmtList: [],
-        mp4: []
+        mp4: [],
+        cIcons: []
       };
       tumblrSet = function(data) {
         if (data['tbr_img'].indexOf('.mp4') > (-1)) {
@@ -63,12 +64,16 @@
         if (datas.userInfo['backcover']) {
           datas.userInfo['backcover'] += imgwParam + width;
         } else {
-          datas.userInfo['backcover'] = 'share/src/images/backcover.png';
+          datas.userInfo['backcover'] = 'share/partial/mine-partial/images/backcover.png';
         }
         scope.Datas.userInfo = datas.userInfo;
-        console.log(datas.userInfo);
+        scope.Datas.alPrice = datas.userInfo.al_price;
+        scope.Datas.price = datas.userInfo.price;
         $rootScope.title = scope.Datas.userInfo.nickname + " - 「靠我」智慧交易平台";
         $rootScope.content = scope.Datas.userInfo.ui_summary;
+        scope.Datas.userInfo.rich_summary = scope.Datas.userInfo.rich_summary.replace(/\r\n|\r|\n/gi, '<br />');
+        scope.Datas.userInfo.rich_summary = scope.Datas.userInfo.rich_summary.replace(/<br \/><br \/>|<br \/><br \/><br \/>|<br \/><br \/><br \/><br \/>/gi, '<br/>');
+        scope.Datas.rich_summary = scope.Datas.userInfo.rich_summary;
         ref = datas.tumblr;
         for (i = 0, len = ref.length; i < len; i++) {
           tumblr = ref[i];
@@ -77,14 +82,20 @@
         scope.Datas.poList = datas.poList;
         scope.Datas.cmmtList = datas.cmmtList;
         scope.Datas.tags = datas.tags;
+        scope.Datas.cIcons = datas.porList.cicons;
+        scope.Datas.gotNum = datas.porList.got_num;
+        if (scope.Datas.gotNum > 0) {
+          scope.Datas.urlTo = "/h5/share.html#/reward-list/" + input.u_id;
+        } else {
+          scope.Datas.urlTo = "/h5/share.html#/reward-null";
+        }
         scope.Datas.isproReturn = scope.Datas.userInfo.ispro === 'T';
         scope.Datas.isproReturnF = scope.Datas.userInfo.ispro !== 'T';
         if (scope.Datas.isproReturnF) {
           document.getElementById("j_isproF").style.width = 0;
           document.getElementById("j_isproF").style.height = 0;
-          document.getElementById("j_isproF").style.overflow = 'hidden';
+          return document.getElementById("j_isproF").style.overflow = 'hidden';
         }
-        return window.location.href = "kaowo://location-end?title=" + $rootScope.title + "&description=" + $rootScope.content;
       });
       return scope.$on('$viewContentLoaded', function() {
         var jqTable;

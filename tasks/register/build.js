@@ -15,17 +15,20 @@ module.exports = function (grunt) {
 
 		'cssmin:main',
 
-		//'uglify',
-
-		'uglify:main_ng',
-		'uglify:ngapp-lib',
-		'uglify:ngapp',
-
 		'copy:main',
 		'copy:srcimg',
 
+		//'uglify',
+		'uglify:main',
+		'uglify:main_ng',
+		'uglify:ngapp-lib',
+		'uglify:ngapp',
+		'uglify:ngappCtrl',
+
+
 		'htmlmin:main',
 		'htmlmin:nghtml',
+
 		'clean:after'
 	]);
 
@@ -46,6 +49,7 @@ module.exports = function (grunt) {
 		'copy:srcimg',
 
 		//'uglify',
+		'uglify:main',
 		'uglify:main_sp',
 		'uglify:spapp-lib',
 		'uglify:spapp',
@@ -62,17 +66,19 @@ module.exports = function (grunt) {
 		'coffee',
 		'less:share',
 		'cssmin:main',
-		'cssmin:share',
-
-		//'uglify:main',
-		'uglify:share-lib',
-		'uglify:share-config',
-		'uglify:share-app',
-
-		'htmlmin:share',
 
 		'copy:share',
 		'copy:srcimg',
+
+		//'uglify:main',
+		'uglify:main',
+		'uglify:main_share',
+		'uglify:share-lib',
+		'uglify:share-config',
+		'uglify:share-app',
+		'uglify:share-serveice',
+
+		'htmlmin:share',
 
 		'dom_munger:share',
 		'clean:after'

@@ -38,9 +38,9 @@ module.exports = function (grunt) {
 						selector: 'body',
 						html    : '<script src="app/src/ngapp-lib.min.js" ></script>' +
 							//'<script src="app/ngApp.js" ></script>' +
-						'<script src="app/src/ngapp.min.js" ></script>' +
-						'<script src="src/scripts/ng_userAgent.js" ></script>'+
-						'<script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?5daa07686fd658851aa29e92ee6f58aa";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>'
+						'<script src="app/src/ngapp.min.js?v=<%= grunt.template.today("yyyymmdd") %>" ></script>' +
+						'<script src="src/scripts/ng_userAgent.js" ></script>'
+						//'<script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?5daa07686fd658851aa29e92ee6f58aa";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>'
 					}
 				],
 				prepend: [
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
 					{
 						selector: 'body',
 						html    : '<script src="spApp/src/spapp-lib.min.js" ></script>' +
-						'<script src="spApp/src/spapp.min.js" ></script>' +
+						'<script src="spApp/src/spapp.min.js?v=<%= grunt.template.today("yyyymmdd") %>" ></script>' +
 						'<script src="src/scripts/sp_userAgent.js" ></script>'
 					}
 				],
@@ -81,9 +81,10 @@ module.exports = function (grunt) {
 					{
 						selector: 'body',
 						html    : '<script src="share/src/lib.min.js" ></script>' +
-						'<script src="share/src/app.config.js" ></script>' +
-						'<script src="share/src/app.min.js" ></script>' +
-						'<script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?5daa07686fd658851aa29e92ee6f58aa";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>'
+						'<script src="share/src/app.config.js" ></script>'+
+						'<script src="src/scripts/share_userAgent.js" ></script>'
+						//'<script src="share/src/app.min.js" ></script>' +
+						//'<script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?5daa07686fd658851aa29e92ee6f58aa";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>'
 					}
 					//{
 					//	selector: 'head',
@@ -94,8 +95,8 @@ module.exports = function (grunt) {
 				prepend: [
 					{
 						selector: 'head',
-						html    : '<link rel="stylesheet" href="src/styles/common.min.css" type="text/css"/>' +
-						'<link rel="stylesheet" href="share/src/css/app.full.min.css?v=<%= grunt.template.today("yyyymmddHHMMss") %>" type="text/css"/>'
+						html    : '<link rel="stylesheet" href="src/styles/common.min.css" type="text/css"/>'
+						//'<link rel="stylesheet" href="share/src/css/app.full.min.css?v=<%= grunt.template.today("yyyymmdd") %>" type="text/css"/>'
 					}
 				]
 			},

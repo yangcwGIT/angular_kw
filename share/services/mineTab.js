@@ -23,6 +23,11 @@
           poList: {
             url: domains.api + '/v1/social/po/list/:u_id/0/5'
           }
+        }),
+        spinfo: $r('', {}, {
+          porList: {
+            url: domains.api + '/v1/tip/pro/:u_id/spinfo'
+          }
         })
       };
       re['allGet'] = function(u_id, cb) {
@@ -63,13 +68,21 @@
         }, function(err) {
           return cb(err);
         });
-        return evp.all('userInfo', 'tumblr', 'tags', 'listGet', 'poList', function(ui, tbr, tags, cmmtList, poList) {
+        re.spinfo.porList({
+          u_id: u_id
+        }, function(results) {
+          return evp.emit('porList', results);
+        }, function(err) {
+          return cb(err);
+        });
+        return evp.all('userInfo', 'tumblr', 'tags', 'listGet', 'poList', 'porList', function(ui, tbr, tags, cmmtList, poList, porList) {
           return cb(false, {
             userInfo: ui,
             tumblr: tbr,
             cmmtList: cmmtList,
             tags: tags,
-            poList: poList
+            poList: poList,
+            porList: porList
           });
         });
       };

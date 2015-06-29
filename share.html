@@ -6,15 +6,13 @@
     <title ng-bind="title"></title>
     <meta name="description" id="description" content="{{content}}"/>
     <link rel="stylesheet" href="src/styles/reset.css"/>
-    <link rel="stylesheet" href="share/src/css/style.css"/>
-    <link rel="stylesheet" href="share/src/css/idangerous.swiper.css"/>
 </head>
 <body>
 <div ui-view="" id="main">
     <img src="src/img/loading.gif" style="display: block;margin: 40% auto;width: 16px">
 </div>
 </body>
-<script type="text/javascript" src="bower_components/zepto/zepto.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="share/src/js/eventProxy.js"></script>
 <script type="text/javascript" src="bower_components/idangerous-swiper/dist/idangerous.swiper.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular.js" ></script>
@@ -25,7 +23,6 @@
 <script type="text/javascript" src="bower_components/angular-lodash-module/angular-lodash-module.js"></script>
 <script type="text/javascript" src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
 <script type="text/javascript" src="share/app.js"></script>
-<script type="text/javascript" src="share/services/jqMineTab.js"></script>
 <script type="text/javascript" src="share/services/Domains.js"></script>
-<script type="text/javascript" src="share/services/mineTab.js"></script>
+<script type="text/javascript" src="src/scripts/share_userAgent.js?a=1"></script>
 </html>

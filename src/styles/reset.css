@@ -133,3 +133,14 @@ input, textarea, select {
 .clear {
     clear: both;
 }
+.hide {
+    display: none
+}
+
+.show {
+    display: block
+}
+input, button,a {
+    outline: none;
+
+}
